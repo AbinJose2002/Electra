@@ -1,0 +1,15 @@
+.icons{
+    padding: 1px;
+}
+
+.icons:hover {
+    cursor: pointer;
+    color:#ADD8E6;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.icons:focus {
+    color: #ADD8E6;
+    font-size: 2rem;
+}
