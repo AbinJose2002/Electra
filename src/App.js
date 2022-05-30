@@ -18,10 +18,10 @@ function App() {
     <div className="App">
       <NavBar />
       <LandingPage particlesInit={particlesInit} particlesLoaded={particlesLoaded}/>
-      <About />
+      <Hackathon />
       <Events />
       <Sponsors />
-      <Hackathon />
+      <About />
       <Footer />
     </div>
   );

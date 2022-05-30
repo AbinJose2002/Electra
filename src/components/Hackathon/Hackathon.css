@@ -1,0 +1,6 @@
+#animate-bounce {
+    animation: bounce 1s infinite;
+    position:relative;
+    display: flex;
+    z-index: 10;  
+}

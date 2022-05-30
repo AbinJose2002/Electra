@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Button from "../Buttons/Button";
 import { Collapse } from "react-collapse";
+import './Hackathon.css'
 
 const ProblemStateMent = () => {
   return (
-    <div className="p-4 md:w-1/3 sm:w-1/2 w-full" 
+    <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
     /* style={{minWidth:""}} */
     >
       <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
@@ -36,21 +37,26 @@ function Hackathon() {
     setIsLearnMoreVisible((prev) => !prev);
   };
   return (
-    <div className="flex justify-center mt-20 mb-20">
+    <div className="flex justify-center mb-20">
       <div className="bg-white w-3/4 bg-white pt-3 rounded-lg">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
           <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
             <span className="block">Hackatron</span>
-            <span className="block text-black text-2xl">
-              It&#x27;s today or never.
+            <span className="block text-black text-xl">
+            24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 40K
             </span>
           </h2>
-          <p className="text-xl mt-4 max-w-md mx-auto text-gray-400">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
-            deserunt provident consectetur voluptate fuga eveniet qui. Eum
-            numquam asperiores minima accusamus hic atque repellat deleniti! Id
-            architecto debitis excepturi consequuntur!
+          <p className="text-xl mt-4 text-gray-400">
+            Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students. The hackathon will be conducted on 13th and 14th of June at Federal Institute of Science and Technology with a prize pool of 40k.
+            The participants need to select a problem statement at the time of registration.
           </p>
+          
+          <div class="mt-20 w-60 relative h-24 rounded-md mx-auto">
+              <div class="flex bg-blue-400 rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
+                <h1 className="text-black text-3xl">Prize Pool of ₹40000/-</h1>
+              </div>
+          </div>
+
           <div
             onClick={() => onButtonClick()}
             className={isLearnMoreVisible ? "duration-200" : "hidden"}
@@ -72,7 +78,7 @@ function Hackathon() {
                   {ProblemStateMent()}
                   {ProblemStateMent()}
                   {ProblemStateMent()}
-                  {ProblemStateMent()}                  
+                  {ProblemStateMent()}
                 </div>
               </div>
               <div className="lg:mt-0 lg:flex-shrink-0">
