@@ -38,7 +38,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-col w-full text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
-          <form className="flex flex-col w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+          <form className="flex flex-col w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center" name="contact" method="post">
             <div className="">
               <input type="hidden" name="form-name" value="contact" />
               <input
