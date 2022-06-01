@@ -20,7 +20,7 @@ function App() {
       <LandingPage particlesInit={particlesInit} particlesLoaded={particlesLoaded}/>
       <Hackathon />
       <Events />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <About />
       <Footer />
     </div>

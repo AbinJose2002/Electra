@@ -8,7 +8,7 @@ const ProblemStateMent = () => {
     <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
     /* style={{minWidth:""}} */
     >
-      <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+      <div className="border-2 border-gray-600 px-4 py-6 rounded-lg duration-500 hover:scale-110">
         <svg
           fill="none"
           stroke="currentColor"
@@ -51,8 +51,8 @@ function Hackathon() {
             The participants need to select a problem statement at the time of registration.
           </p>
           
-          <div class="mt-20 w-60 relative h-24 rounded-md mx-auto">
-              <div class="flex bg-blue-400 rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
+          <div class="mt-20 w-60 h-24 rounded-md mx-auto parent-div">
+              <div class="flex bg-blue-400 glow-on-hover rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
                 <h1 className="text-black text-3xl">Prize Pool of ₹40000/-</h1>
               </div>
           </div>
