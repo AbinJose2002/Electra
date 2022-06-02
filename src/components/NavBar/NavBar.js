@@ -41,9 +41,9 @@ function Nav() {
 
                   <a
                     className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    onClick={() => {document.querySelector("#About-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
+                    onClick={() => {document.querySelector("#Hackathon-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
                   >
-                    About
+                    Hackathon
                   </a>
 
                   <a
@@ -54,15 +54,15 @@ function Nav() {
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => {document.querySelector("#About-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
                   >
-                    Schedule
+                    About
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300  hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => {document.querySelector("#Footer-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
                   >
                     Contact
                   </a>

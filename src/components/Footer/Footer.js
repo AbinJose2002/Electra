@@ -2,10 +2,11 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black	w-full py-8 mt-10">
+    <footer className="bg-black	w-full py-8 mt-10" id="Footer-Page">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
-          <a
+        <h1 className="text-white w-full text-center text-3xl">Want to Know More ?</h1>
+        <div className="pt-8 flex max-w-xs mx-auto items-center justify-center">
+          {/* <a
             href="#"
             className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
           >
@@ -19,9 +20,9 @@ export default function Footer() {
             >
               <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
             </svg>
-          </a>
+          </a> */}
           <a
-            href="#"
+            href="https://www.instagram.com/cosphi22/"
             className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
           >
             <svg
@@ -38,6 +39,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-col w-full text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+          <h3 className="text-white text-2xl mt-5 mb-5 ">Reach Us at </h3>
           <form className="flex flex-col w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center" name="contact" method="post">
             <div className="">
               <input type="hidden" name="form-name" value="contact" />

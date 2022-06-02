@@ -5,7 +5,7 @@ import './Hackathon.css'
 
 const ProblemStateMent = () => {
   return (
-    <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
+    <div className="p-4 md:w-1/3 sm:w-1/2 w-full" id="Hackathon-Page"
     /* style={{minWidth:""}} */
     >
       <div className="border-2 border-gray-600 px-4 py-6 rounded-lg duration-500 hover:scale-110">
@@ -74,11 +74,12 @@ function Hackathon() {
             <section className="text-gray-700 body-font duration-200">
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex justify-evenly flex-wrap -m-4 text-center">
+                  <h1 className="text-3xl">Coming Soon!!!!!</h1>
+                  {/* {ProblemStateMent()}
                   {ProblemStateMent()}
                   {ProblemStateMent()}
                   {ProblemStateMent()}
-                  {ProblemStateMent()}
-                  {ProblemStateMent()}
+                  {ProblemStateMent()} */}
                 </div>
               </div>
               <div className="lg:mt-0 lg:flex-shrink-0">
