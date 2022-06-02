@@ -5,7 +5,7 @@ import './Hackathon.css'
 
 const ProblemStateMent = () => {
   return (
-    <div className="p-4 md:w-1/3 sm:w-1/2 w-full" id="Hackathon-Page"
+    <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
     /* style={{minWidth:""}} */
     >
       <div className="border-2 border-gray-600 px-4 py-6 rounded-lg duration-500 hover:scale-110">
@@ -37,7 +37,7 @@ function Hackathon() {
     setIsLearnMoreVisible((prev) => !prev);
   };
   return (
-    <div className="flex justify-center mb-20">
+    <div className="flex justify-center mb-20" id="Hackathon-Page">
       <div className="bg-white w-3/4 bg-white pt-3 rounded-lg">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
           <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
