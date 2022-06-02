@@ -1,40 +1,66 @@
 import React, { useState, useEffect } from "react";
 import { FaWrench, FaTrophy, FaTasks, FaTableTennis } from "react-icons/fa";
 import "./Events.css";
-
+import Drone from "../../assets/drone.jpg"
+import PLC from "../../assets/circuit.jpg"
+import CAD from "../../assets/cad.jpg"
+import EV from "../../assets/ev.jpg"
+import Quiz from "../../assets/quiz.jpg"
+import Debug from "../../assets/debug.webp"
 
 const registerButton = ({ img_src, title, content, cash_price, link, isMoney=true}) => {
   return (
-    <div
-      // style={{height:"500px"}}
-      className="shadow-lg bg-black rounded-2xl bg-white w-48 md:w-1/3 mt-10 md:mr-5 md:ml-5 p-4 h-fit flex-col md:flex-row"
-    >
-      <img
-        src={img_src}
-        alt="adidas"
-        className="w-32 p-4 h-36 m-auto"
-      />
-      <div className="bg-pink-200 lg:h-72 m-3 p-4 rounded-lg">
-        <p className="text-white text-center text-xl font-bold ">{title}</p>
-        <p className="text-gray-50 text-xs">{content}</p>
-        <div className="flex items-center flex-col flex-1">
-          {isMoney == true ? <p className="text-blue-500 mt-5 mb-5">₹{cash_price}/-</p> : <></>}
-          {isMoney == true ? 
-          <button
-          type="button"
-          className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
-        >
-          <a href={link}>
-            Register
-          </a>
-        </button>
-        :
-        <></>
-          }
+    // <div
+    //   // style={{height:"500px"}}
+    //   className="shadow-lg bg-black rounded-2xl bg-white w-48 md:w-1/3 mt-10 md:mr-5 md:ml-5 p-4 h-fit flex-col md:flex-row"
+    // >
+    //   <img
+    //     src={Drone}
+    //     alt="adidas"
+    //     className="m-auto"
+    //   />
+    //   <div className="bg-pink-200 m-3 p-4 rounded-lg">
+    //     <p className="text-white text-center text-xl font-bold ">{title}</p>
+    //     <p className="text-gray-50 text-xs hidden md:flex">{content}</p>
+    //     <div className="flex items-center flex-col flex-1">
+        //   {isMoney == true ? <p className="text-blue-500 mt-5 mb-5">₹{cash_price}/-</p> : <></>}
+        //   {isMoney == true ? 
+        //   <button
+        //   type="button"
+        //   className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
+        // >
+        //   <a href={link}>
+        //     Register
+        //   </a>
+        // </button>
+        // :
+        // <></>
+        //   }
           
-        </div>
-      </div>
-    </div>
+    //     </div>
+    //   </div>
+    // </div>
+                  <div class="p-4 sm:w-1/2 lg:w-1/3">
+                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <img class="lg:h-72 md:h-48 w-full object-cover"
+                            src={img_src} alt="blog" />
+                        <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
+                            
+                            <h1 class="text-2xl font-semibold mb-3">{title}</h1>
+                            <p class="leading-relaxed mb-3">{content}</p>
+                            <div class="flex items-center flex-wrap ">
+                              {isMoney == true ? <p className="text-blue-500 mt-5 mb-5"> ₹ {cash_price} /-</p> : <></>}
+                              <a href={link}>
+                                <button
+                                  type="button"
+                                  className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
+                                >
+                                </button>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
   );
 };
 
@@ -159,8 +185,8 @@ const Tabs = ({ color }) => {
 Department of Electrical and Electronics Engineering in association with COSPHI presents you two phenomenal workshops to build your technical skills and passion in engineering.
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
-                  {registerButton({ img_src: null, title: "Avian", content: "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .", cash_price: 750, link: "www.google.com" })}
-                  {registerButton({ img_src: null, title: "AutoM8", content: "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.", cash_price: 300, link: "www.google.com" })}
+                  {registerButton({ img_src: Drone, title: "Avian", content: "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .", cash_price: 750, link: "www.google.com" })}
+                  {registerButton({ img_src: PLC, title: "AutoM8", content: "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.", cash_price: 300, link: "www.google.com" })}
                 </div>
               </div>
               <div className={openTab === 2 ? "block" : "hidden"} id="link2">
@@ -170,10 +196,10 @@ Department of Electrical and Electronics Engineering in association with COSPHI 
                 Creativity is the act of turning new and imaginative ideas into reality. Here is an opportunity to stretch your imagination.
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
-                  {registerButton({ img_src: null, title: "Cervello", content: "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.CERVELLO is a quiz contest organised by ELECTRA in association with COSPHI. The quiz will be based on basic electrical and electronics,science, general knowledge and current affairs.", cash_price: 3000, link: "www.google.com" })}
+                  {registerButton({ img_src: Quiz, title: "Cervello", content: "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.CERVELLO is a quiz contest organised by ELECTRA in association with COSPHI. The quiz will be based on basic electrical and electronics,science, general knowledge and current affairs.", cash_price: 3000, link: "www.google.com" })}
                   {registerButton({ img_src: null, title: "ScrapYard", content: "ELECTRA in association with COSPHI presents you Scrapyard, a competition which helps students to think on ways of reusing everyday materials. Participants will be provided a theme for which they have to model best creative and attractive products out of the waste materials.The competition's purpose is to raise environmental awareness and foster", cash_price: 2500, link: "www.google.com" })}
-                  {registerButton({ img_src: null, title: "SketchItUp", content: "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.", cash_price: 2000, link: "www.google.com" })}
-                  {registerButton({ img_src: null, title: "CircuitGenix", content: "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.", cash_price: 3500, link: "www.google.com" })}
+                  {registerButton({ img_src: CAD, title: "SketchItUp", content: "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.", cash_price: 2000, link: "www.google.com" })}
+                  {registerButton({ img_src: Debug, title: "CircuitGenix", content: "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.", cash_price: 3500, link: "www.google.com" })}
                 </div>
               </div>
               <div className={openTab === 3 ? "block" : "hidden"} id="link3">
@@ -184,7 +210,7 @@ Department of Electrical and Electronics Engineering in association with COSPHI 
                     However, there are legitimate concerns about meeting future energy demand for charging electric vehicle batteries with clean and renewable sources.<br />
                     Here is a visual treat on electric vehicles put on by the electra community under the auspices of COSPHI. We feature industry leaders such as Revolt, Aban Motors, Gokulam Motors, Tata, Hyundai, Odysse, and MG COASTLINE GARAGES.
                   </div>
-                  {registerButton({ img_src: null, title: "Cervello", content: "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.", cash_price: 3000, link: "www.google.com", isMoney:false})}
+                  {registerButton({ img_src: EV, title: "Cervello", content: "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.", cash_price: 3000, link: "www.google.com", isMoney:false})}
                 </div>
               </div>
               <div className={openTab === 4 ? "block" : "hidden"} id="link3">
