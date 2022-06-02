@@ -320,6 +320,7 @@ const Tabs = ({ color }) => {
                       "Discover the mysterious secrets hidden deep within the vast unknown",
                     cash_price: 3000,
                     link: "www.google.com",
+                    isMoney:false
                   })}
                 </div>
               </div>
