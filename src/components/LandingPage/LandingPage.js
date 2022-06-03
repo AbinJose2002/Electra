@@ -99,8 +99,8 @@ export default function LandingPage({particlesInit, particlesLoaded}) {
             {/* <button className="mt-40 mb-10 button-register px-6 py-2  transition border-2 ease-in duration-200 uppercase text-white rounded-full hover:bg-white hover:text-black border-2 border-gray-900 focus:outline-none">
                 Register Now
             </button> */}
-            <Button text="Register Now" />
-            <svg className="" id="scrolltrigger" width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* <Button text="Register Now" /> */}
+            <svg className="mt-40" id="scrolltrigger" width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Frame 1">
                         <path id="outer" d="M67.5 34V66C67.5 75.665 59.665 83.5 50 83.5C40.335 83.5 32.5 75.665 32.5 66V34C32.5 24.335 40.335 16.5 50 16.5C59.665 16.5 67.5 24.335 67.5 34Z" stroke="white" strokeWidth="3"></path>
                         <rect id="inner" x="47" y="27" width="7" height="23" rx="3.5" fill="#20A2DE"></rect>
