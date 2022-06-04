@@ -63,11 +63,10 @@ function Hackathon() {
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex justify-evenly flex-wrap -m-4 text-center">
                   {/* <h1 className="text-3xl">Coming Soon!!!!!</h1> */}
-                  {ProblemStateMent({content:"Aid disabled students in professional stem fields such as engineering"})}
-                  {ProblemStateMent({content:"Indoor mapping solutions between large institutions"})}
-                  {ProblemStateMent({content:"AI-assisted farming systems"})}
-                  {ProblemStateMent({content:"Implementing AI solutions in embedded systems"})}
-                  {ProblemStateMent({content:"Implementing Smart solutions for efficient power grid management"})}
+                  {ProblemStateMent({content:"Support differently abled students in professional stem field - engineering"})}
+                  {ProblemStateMent({content:"Indoor mapping solutions at large institutions"})}
+                  {ProblemStateMent({content:"AI assistance in electrical power grid"})}
+                  {ProblemStateMent({content:"Smart solutions for assisting emergency services to navigate/reduce traffic congestion"})}
                 </div>
               </div>
               <div className="lg:mt-0 lg:flex-shrink-0">
