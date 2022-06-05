@@ -18,7 +18,8 @@ const registerButton = ({
   cash_price,
   link,
   isMoney = true,
-  FeesOrPrize = "Fees"
+  FeesOrPrize = "Fees",
+  team,
 }) => {
   return (
     // <div
@@ -61,6 +62,7 @@ const registerButton = ({
         <div class="p-6">
           <h1 class="text-2xl font-semibold mb-3">{title}</h1>
           <p class="leading-relaxed mb-3">{content}</p>
+          {team != null ? <h3 className="text-lg mb-5 text-center text-bold">Register as team of two</h3>:<></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
               <p className="text-blue-500 text-3xl mb-10 "> {FeesOrPrize} : ₹ {cash_price} /-</p>
@@ -244,6 +246,7 @@ const Tabs = ({ color }) => {
                     cash_price: 3000,
                     FeesOrPrize:"Prize",
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
+                    team: "Register"
                   })}
                   {registerButton({
                     img_src: ScrapYard,
@@ -273,6 +276,7 @@ const Tabs = ({ color }) => {
                       "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.",
                     cash_price: 3500,
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
+                    team:"Register as a team of two"
                   })}
                 </div>
               </div>
