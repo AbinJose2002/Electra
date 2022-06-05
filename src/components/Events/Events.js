@@ -294,10 +294,10 @@ const Tabs = ({ color }) => {
                     concerns about meeting future energy demand for charging
                     electric vehicle batteries with clean and renewable sources.
                     <br />
-                    Here is a visual treat on electric vehicles put on by the
+                    {/* Here is a visual treat on electric vehicles put on by the
                     electra community under the auspices of COSPHI. We feature
                     industry leaders such as Revolt, Aban Motors, Gokulam
-                    Motors, Tata, Hyundai, Odysse, and MG COASTLINE GARAGES.
+                    Motors, Tata, Hyundai, Odysse, and MG COASTLINE GARAGES. */}
                   </div>
                   {registerButton({
                     img_src: EV,
