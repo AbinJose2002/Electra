@@ -20,6 +20,7 @@ const registerButton = ({
   isMoney = true,
   FeesOrPrize = "Fees",
   team,
+  regFees,
 }) => {
   return (
     // <div
@@ -65,10 +66,11 @@ const registerButton = ({
           {team != null ? <h3 className="text-lg mb-5 text-center text-bold">Register as team of two</h3>:<></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
-              <p className="text-blue-500 text-3xl mb-10 "> {FeesOrPrize} : ₹ {cash_price} /-</p>
+              <p className="text-blue-500 text-3xl mb-5 "> {FeesOrPrize} : ₹ {cash_price} /-</p>
             ) : (
               <></>
             )}
+            {regFees != null ? <p className="text-lg mb-5">Registeration Fees: ₹ {regFees} /-</p> : <></>}
             {isMoney == true ? (
               <div className="w-full">
                 <a href={link}>
@@ -240,6 +242,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Quiz,
+                    regFees: 100,
                     title: "CERVELLO",
                     content:
                       "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.CERVELLO is a quiz contest organised by ELECTRA in association with COSPHI. The quiz will be based on basic electrical and electronics,science, general knowledge and current affairs.",
@@ -251,6 +254,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: ScrapYard,
                     title: "SCRAPYARD",
+                    regFees: 100,
                     FeesOrPrize:"Prize",
                     content:
                       "ELECTRA in association with COSPHI presents you Scrapyard, a competition which helps students to think on ways of reusing everyday materials. Participants will be provided a theme for which they have to model best creative and attractive products out of the waste materials.The competition's purpose is to raise environmental awareness and foster",
@@ -260,7 +264,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: CAD,
                     FeesOrPrize:"Prize",
-
+                    regFees: 100,
                     title: "SKETCHITUP",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.",
@@ -270,7 +274,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Debug,
                     FeesOrPrize:"Prize",
-
+                    regFees: 100,
                     title: "CIRCUITGENIX",
                     content:
                       "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.",
