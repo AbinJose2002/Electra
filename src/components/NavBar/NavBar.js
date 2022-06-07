@@ -139,7 +139,7 @@ function Nav() {
                   onClick={() => {document.querySelector("#About-Page").scrollIntoView({behavior:'smooth', block:'start'})}}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
+                  Hackathon
                 </a>
 
                 <a
@@ -151,16 +151,18 @@ function Nav() {
 
                 <a
                   href="#"
+                  onClick={() => {document.querySelector("#Abouts-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Schedule
+                  About
                 </a>
 
                 <a
                   href="#"
+                  onClick={() => {document.querySelector("#Footer-Page").scrollIntoView({behavior:'smooth', block:'center'})}}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Contacts
+                  Contact
                 </a>
               </div>
             </div>
