@@ -3,13 +3,14 @@ import Button from "../Buttons/Button";
 import { Collapse } from "react-collapse";
 import './Hackathon.css'
 
+
 const ProblemStateMent = ({content}) => {
   return (
     <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
     /* style={{minWidth:""}} */
     >
       <div className="flex justify-center items-center border-2 border-gray-600 px-4 py-6 rounded-lg duration-500 hover:scale-110 h-72">
-        <h2 className="title-font font-medium text-3xl text-gray-900">{content}</h2>
+        <h2 className="title-font font-medium text-2xl text-gray-900">{content}</h2>
       </div>
     </div>
   );
@@ -27,8 +28,14 @@ function Hackathon() {
     <div className="flex justify-center mb-20" id="Hackathon-Page">
       <div className="bg-white w-3/4 bg-white pt-3 rounded-lg">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
-            <span className="block">Hackatron</span>
+          <h2 className="font-extrabold text-black">
+            <span className="text-4xl md:text-6xl block">Hackatron</span>
+            <span className="text-lg">Sponsored By</span>
+            <div className="flex justify-center">
+              <a href="https://equipo.io/">
+                <img src={`${process.env.PUBLIC_URL}/equipo.png`} className="h-32 hover:scale-110 duration-200 transition" alt="" />
+              </a>
+            </div>
             <span className="block text-black text-xl">
             24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 40K
             </span>
