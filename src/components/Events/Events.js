@@ -13,6 +13,7 @@ import Treasure from "../../assets/treasure.jpg";
 const registerButton = ({
   class_new = "",
   img_src,
+  date,
   title,
   content,
   cash_price,
@@ -63,7 +64,10 @@ const registerButton = ({
         <div class="p-6">
           <h1 class="text-2xl font-semibold mb-3">{title}</h1>
           <p class="leading-relaxed mb-3">{content}</p>
-          {team != null ? <h3 className="text-lg mb-5 text-center text-bold">Register as team of two</h3>:<></>}
+          <div>
+            <h6 className="text-xl text-center mb-5">DATE: {date} </h6>
+          </div>
+          {team != null ? <h3 className="text-lg mb-5 text-center text-bold">** Register as team of two</h3>:<></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
               <p className="text-blue-500 text-3xl mb-5 "> {FeesOrPrize} : ₹ {cash_price} /-</p>
@@ -214,6 +218,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Drone,
+                    date:"14th May 2022",
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
@@ -222,6 +227,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: PLC,
+                    date:"14th May 2022",
                     title: "AZTECX",
                     content:
                       "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.",
@@ -242,6 +248,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Quiz,
+                    date:"14th May 2022",
                     regFees: 20,
                     title: "CERVELLO",
                     content:
@@ -253,6 +260,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: ScrapYard,
+                    date:"14th May 2022",
                     title: "SCRAPYARD",
                     regFees: 20,
                     FeesOrPrize:"Prize",
@@ -263,6 +271,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: CAD,
+                    date:"14th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
                     title: "SKETCHITUP",
@@ -273,6 +282,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: Debug,
+                    date:"14th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
                     title: "CIRCUITGENIX",
@@ -305,6 +315,7 @@ const Tabs = ({ color }) => {
                   </div>
                   {registerButton({
                     img_src: EV,
+                    date:"14th May 2022",
                     class_new:"text-center",
                     title: "Expo",
                     isMoney: false,
@@ -323,6 +334,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize:"Prize",
                     img_src: Treasure,
+                    date:"14th May 2022",
                     title: "Treasure Hunt",
                     content:
                       "Discover the mysterious secrets hidden deep within the vast unknown",
