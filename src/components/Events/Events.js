@@ -217,7 +217,7 @@ const Tabs = ({ color }) => {
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
-                    cash_price: 750,
+                    cash_price: 150,
                     link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
                   })}
                   {registerButton({
@@ -225,7 +225,7 @@ const Tabs = ({ color }) => {
                     title: "AZTECX",
                     content:
                       "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.",
-                    cash_price: 300,
+                    cash_price: 100,
                     link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
                   })}
                 </div>
@@ -242,7 +242,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Quiz,
-                    regFees: 100,
+                    regFees: 20,
                     title: "CERVELLO",
                     content:
                       "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.CERVELLO is a quiz contest organised by ELECTRA in association with COSPHI. The quiz will be based on basic electrical and electronics,science, general knowledge and current affairs.",
@@ -254,7 +254,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: ScrapYard,
                     title: "SCRAPYARD",
-                    regFees: 100,
+                    regFees: 20,
                     FeesOrPrize:"Prize",
                     content:
                       "ELECTRA in association with COSPHI presents you Scrapyard, a competition which helps students to think on ways of reusing everyday materials. Participants will be provided a theme for which they have to model best creative and attractive products out of the waste materials.The competition's purpose is to raise environmental awareness and foster",
@@ -264,7 +264,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: CAD,
                     FeesOrPrize:"Prize",
-                    regFees: 100,
+                    regFees: 20,
                     title: "SKETCHITUP",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.",
@@ -274,7 +274,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Debug,
                     FeesOrPrize:"Prize",
-                    regFees: 100,
+                    regFees: 20,
                     title: "CIRCUITGENIX",
                     content:
                       "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.",
