@@ -99,7 +99,7 @@ const registerButton = ({
               <></>
             )}
             {regFees != null ? <p className="text-lg mb-5">Registeration Fees: ₹ {regFees} /-</p> : <></>}
-            {complete == true ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link isMoney/>}
+            {complete == true ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link={link} isMoney={isMoney}/>}
             {/* {isMoney == true ? (
               <div className="w-full">
                 <a href={link}>
