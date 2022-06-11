@@ -79,12 +79,12 @@ function Hackathon() {
               <div className="lg:mt-0 lg:flex-shrink-0">
                 <div className="inline-flex rounded-md shadow">
                   <Button
-                    text={"Hack Now!!!"}
+                    text={"Registration Closed, Thank You!!!"}
                     isLink={true}
                     class_val={
                       "px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
                     }
-                    link={"https://www.yepdesk.com/open-register/6298e49946e0fb000173b882/bef7p9s0o8"}
+                    link={""}
                   />
                 </div>
               </div>
