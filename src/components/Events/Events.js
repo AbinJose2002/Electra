@@ -274,7 +274,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Quiz,
-                    date:"14th May 2022",
+                    date:"13th May 2022",
                     regFees: 20,
                     title: "CERVELLO",
                     content:
@@ -297,7 +297,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: CAD,
-                    date:"14th May 2022",
+                    date:"13th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
                     title: "SKETCHITUP",
