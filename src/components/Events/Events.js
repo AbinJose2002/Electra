@@ -10,8 +10,32 @@ import Debug from "../../assets/debug.webp";
 import ScrapYard from "../../assets/scrapyard.jpg";
 import Treasure from "../../assets/treasure.jpg";
 
+const Content = ({isMoney, link}) => {
+  return (
+    <div className="w-full">
+    {isMoney == true ? (
+      <div className="w-full">
+        <a href={link}>
+          <button
+            type="button"
+            className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
+          >
+            Register Now
+          </button>
+        </a>
+      </div>
+    ) : (
+      <></>
+    )}
+    </div>
+  )
+}
+
+
+
 const registerButton = ({
   class_new = "",
+  complete=false,
   img_src,
   date,
   title,
@@ -75,7 +99,8 @@ const registerButton = ({
               <></>
             )}
             {regFees != null ? <p className="text-lg mb-5">Registeration Fees: ₹ {regFees} /-</p> : <></>}
-            {isMoney == true ? (
+            {complete == true ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link isMoney/>}
+            {/* {isMoney == true ? (
               <div className="w-full">
                 <a href={link}>
                   <button
@@ -88,7 +113,7 @@ const registerButton = ({
               </div>
             ) : (
               <></>
-            )}
+            )} */}
           </div>
         </div>
       </div>
@@ -217,6 +242,7 @@ const Tabs = ({ color }) => {
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
+                    complete:true,
                     img_src: Drone,
                     date:"14th May 2022",
                     title: "AVIAN",
