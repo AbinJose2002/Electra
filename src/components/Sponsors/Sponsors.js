@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../Buttons/Button";
 
-const SponsorList = ({ img, content }) => {
+const SponsorList = ({ img, link }) => {
   return (
     <div>
-      <a href="https://equipo.io/">
-        <div className="border-black border-8 rounded-full hover:scale-110 duration-200 transition hover:bg-blue-100 h-60 w-60 flex justify-center">
-          <img src={`${process.env.PUBLIC_URL}/${img}`} className="p-2" alt="" />
+      <a href={link}>
+        <div className="mt-10 border-black border-8 rounded-full hover:scale-110 duration-200 transition hover:bg-blue-100 h-40 w-40 md:h-60 md:w-60 flex justify-center">
+          <img src={`${process.env.PUBLIC_URL}/${img}`} className="object-contain" alt="" />
         </div>
       </a>
     </div>
@@ -23,8 +23,9 @@ function Sponsors() {
           <div className="text-lg mr-10 ml-10 text-center mb-10 ">
             Here are our wonderful sponsors!!!!
           </div>
-          <div className="SponsorList flex justify-center">
-            <SponsorList img={"equipo.png"} />
+          <div className="SponsorList flex flex-wrap justify-evenly">
+            <SponsorList img={"equipo.png"} link={"https://equipo.io/"}/>
+            <SponsorList img={"Techolas.png"} link={"https://techolas.com/"}/>
           </div>
           <div className="mt-10 flex flex justify-center w-full flex-col">
             <h2 className="text-center text-2xl text-bold">
