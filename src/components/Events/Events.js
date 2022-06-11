@@ -242,7 +242,7 @@ const Tabs = ({ color }) => {
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
-                    complete:false,
+                    complete:true,
                     img_src: Drone,
                     date:"14th May 2022",
                     title: "AVIAN",
