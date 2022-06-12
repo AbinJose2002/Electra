@@ -275,6 +275,7 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     img_src: Quiz,
+                    complete:true,
                     date:"13th May 2022",
                     regFees: 20,
                     title: "CERVELLO",
@@ -287,6 +288,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: ScrapYard,
+                    complete:true,
                     date:"14th May 2022",
                     title: "SCRAPYARD",
                     regFees: 20,
@@ -298,6 +300,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: CAD,
+                    complete:true,
                     date:"13th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
@@ -309,6 +312,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: Debug,
+                    complete:true,
                     date:"14th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
