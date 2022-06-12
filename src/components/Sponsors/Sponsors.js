@@ -26,6 +26,7 @@ function Sponsors() {
           <div className="SponsorList flex flex-wrap justify-evenly">
             <SponsorList img={"equipo.png"} link={"https://equipo.io/"}/>
             <SponsorList img={"Techolas.png"} link={"https://techolas.com/"}/>
+            <SponsorList img={"newQuality.png"} link={"http://www.newqualitytrading.com/index.php"}/>
           </div>
           <div className="mt-10 flex flex justify-center w-full flex-col">
             <h2 className="text-center text-2xl text-bold">
