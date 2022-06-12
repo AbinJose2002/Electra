@@ -253,6 +253,7 @@ const Tabs = ({ color }) => {
                   })}
                   {registerButton({
                     img_src: PLC,
+                    complete:true,
                     date:"14th May 2022",
                     title: "AZTECX",
                     content:
