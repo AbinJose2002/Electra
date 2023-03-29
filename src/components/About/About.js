@@ -37,6 +37,32 @@ function About() {
           <br />
           The organization hosts seminars and presentations by prominent figures from the industrial and academic worlds. Industrial visits are also scheduled to provide information.
         </div>
+
+        <h1 className="text-center w-full text-bold text-3xl md:text-4xl">The Department Vision</h1>
+        <div className="p-10">
+        To prepare the students to meet the demands of growing industries and to mould
+        them into successful professionals, globally competent and morally upright, in the
+        field of Electrical and Electronics Engineering, contributing to nation building and
+        the progress of humanity.
+        </div>
+
+        <h1 className="text-center w-full text-bold text-3xl md:text-4xl">The Department Mission</h1>
+        <div className="p-10">
+          <li>
+            To impart quality and value based education enabling the students to become
+            solution providers for the growing challenges in the industry and society
+          </li>
+          <li>
+            To create awareness among the students, the impact of Electrical and
+            Electronics Engineering in the global scenario and the challenges of
+            electrical based industries and organizations
+          </li>
+          <li>
+            To enhance the competitiveness of the graduates for higher studies by
+            promoting research and development in the field of electrical as well as
+            interdisciplinary subjects.
+          </li>
+        </div>
       </div>
     </div>
   );
