@@ -22,7 +22,7 @@ export default function Footer() {
             </svg>
           </a> */}
           <a
-            href="https://www.instagram.com/cosphi22/"
+            href="https://www.instagram.com/electrafisat/"
             className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
           >
             <svg

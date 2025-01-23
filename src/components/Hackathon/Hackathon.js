@@ -77,7 +77,7 @@ function Hackathon() {
             <p className="text-xl mt-4 text-gray-400">
               Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students.
             </p>
-
+          {/* sett the coordinator details */}
             <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
               <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
             </div>
@@ -125,7 +125,7 @@ function Hackathon() {
               <span className="text-4xl md:text-6xl block">
                 <SplitText
                   text="BATTLE ON THE BOARDS"
-                  className="text-8xl md:text-6xl font-semibold"
+                  className="text-5xl md:text-5xl font-semibold whitespace-nowrap"
                   delay={100}
                   animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                   animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -147,17 +147,15 @@ function Hackathon() {
             <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
               <h1 className="text-black text-3xl">Prize Pool of ₹15,000/-</h1>
             </div>
-
-            <div onClick={onButtonClick2} className={isLearnMoreVisible2 ? "mt-8" : "hidden"}>
+{/* sett the coordinator details */}
+            <div className="mt-8">
               <Button
-                text="Learn More"
+                text="Register Now"
+                isLink={true}
                 class_val="px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
+                link="https://www.yepdesk.com/battle-on-the-boards"
               />
             </div>
-
-            <Collapse isOpened={isOpened2}>
-              {/* Add specific content for the second event */}
-            </Collapse>
           </div>
 
           {/* Poster Side */}

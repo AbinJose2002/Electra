@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaWrench, FaTrophy, FaTasks, FaTableTennis } from "react-icons/fa";
 import "./Events.css";
 import Drone from "../../assets/drone.jpg";
-import PLC from "../../assets/circuit.jpg";
+import Additive from "../../assets/additive.jpeg";
+import PLC from "../../assets/pathPixel.jpeg";
 import CAD from "../../assets/cad.jpg";
 import EV from "../../assets/ev.jpg";
 import Quiz from "../../assets/quiz.jpg";
@@ -49,39 +50,42 @@ const registerButton = ({
   coordinators,
 }) => {
   return (
-    <div class={`p-4 sm:w-1/2 lg:w-1/3` + class_new}>
+    <div class={`p-2 sm:p-4 w-full sm:w-1/2 lg:w-1/3 ${class_new}`}>
       <div class="h-full hover:bg-indigo-700 hover:text-white transition duration-300 ease-in border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
-          class="lg:h-72 md:h-48 w-full object-cover"
+          class="h-48 sm:h-56 lg:h-72 w-full object-cover object-center"
           src={img_src}
           alt="blog"
         />
-        <div class="p-6">
-          <h1 class="text-2xl font-semibold mb-3">{title}</h1>
-          <p class="leading-relaxed mb-3 text-justify">{content}</p>
+        <div class="p-4 sm:p-6">
+          <h1 class="text-xl sm:text-2xl font-semibold mb-3">{title}</h1>
+          <p class="text-sm sm:text-base leading-relaxed mb-3 text-justify">{content}</p>
           <div>
-            <h6 className="text-xl text-center mb-5">DATE: {date} </h6>
+            <h6 className="text-lg sm:text-xl text-center mb-5">DATE: {date}</h6>
           </div>
-          {team != null ? <h3 className="text-lg mb-5 text-center text-bold">** Register as team of two</h3>:<></>}
+          {team != null ? <h3 className="text-base sm:text-lg mb-5 text-center font-bold">** Register as team of two</h3>:<></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
-              <p className="text-blue-500 text-3xl mb-5 "> {FeesOrPrize} : ₹ {cash_price} /-</p>
+              <p className="text-blue-500 text-2xl sm:text-3xl mb-5">{FeesOrPrize} : ₹ {cash_price} /-</p>
             ) : (
               <></>
             )}
-            {regFees != null ? <p className="text-lg mb-5">Registeration Fees: ₹ {regFees} /-</p> : <></>}
+            {regFees != null ? <p className="text-base sm:text-lg mb-5">Registration Fees: ₹ {regFees} /-</p> : <></>}
             {coordinators && coordinators.length > 0 && (
               <div className="w-full mb-5">
-                <h3 className="text-lg font-semibold mb-2">Coordinators:</h3>
+                <h3 className="text-base sm:text-lg font-semibold mb-2">Coordinators:</h3>
                 {coordinators.map((coordinator, index) => (
-                  <div key={index} className="flex flex-col  mb-2">
-                    <p className="font-medium">{coordinator.name}</p>
-                    <p>{coordinator.phone}</p>
+                  <div key={index} className="flex flex-col mb-2">
+                    <p className="text-sm sm:text-base font-medium">{coordinator.name}</p>
+                    <p className="text-sm sm:text-base">{coordinator.phone}</p>
                   </div>
                 ))}
               </div>
             )}
-            {complete == false ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link={link} isMoney={isMoney}/>}
+            {complete == false ? 
+              <h3 className="text-red-600 text-sm sm:text-base">Registration is Closed, Thank you for your participation.</h3>
+              : <Content link={link} isMoney={isMoney}/>
+            }
           </div>
         </div>
       </div>
@@ -230,7 +234,7 @@ const Tabs = ({ color }) => {
                     ]
                   })}
                   {registerButton({
-                    img_src: Drone,
+                    img_src: Additive,
                     complete:true,
                     date:"14th February 2025", 
                     title: "ADDITIVE MANUFACTURING",
@@ -252,20 +256,20 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: PLC,
                     complete:true,
-                    date:"14th February 2025",
-                    title: "AZTECX",
+                    date:"15th February 2025",
+                    title: "Path Pixels",
                     content:
-                      "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.",
-                    cash_price: 100,
-                    link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
+                      "Join our AR & VR Workshop by ELECTRA and COSPHI for an immersive, hands-on experience with Augmented and Virtual Reality. Discover the fundamentals of AR/VR, explore their applications in industries like gaming, healthcare, and education, and learn to create simple AR/VR experiences using accessible tools. Ideal for tech enthusiasts and creative minds eager to explore the future of interactive technologies.",
+                    cash_price: 130,
+                    link: "https://www.yepdesk.com/path-pixel",
                     coordinators: [
                       {
-                        name: "Nitin Jose",
-                        phone: "+91 8078533091"
+                        name: "Alan George",
+                        phone: "+91 8129384284"
                       },
                       {
-                        name: "Devika A Nair", 
-                        phone: "+91 8289966507"
+                        name: "V.Partip", 
+                        phone: "+91 8138084357"
                       }
                     ]
                   })}
@@ -304,7 +308,7 @@ const Tabs = ({ color }) => {
                       }
                     ]
                   })}
-                  {registerButton({
+                  {/* {registerButton({
                     img_src: ScrapYard,
                     complete:true,
                     date:"14th May 2022",
@@ -325,14 +329,14 @@ const Tabs = ({ color }) => {
                         phone: "+91 9876543211"
                       }
                     ]
-                  })}
-                  {registerButton({
+                  })} */}
+                  {/* {registerButton({
                     img_src: CAD,
                     complete:true,
                     date:"13th May 2022",
                     FeesOrPrize:"Prize",
                     regFees: 20,
-                    title: "SKETCHITUP",
+                    title: "Pencil Drawing",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.",
                     cash_price: 2000,
@@ -347,27 +351,27 @@ const Tabs = ({ color }) => {
                         phone: "+91 9876543211"
                       }
                     ]
-                  })}
+                  })} */}
                   {registerButton({
                     img_src: Debug,
                     complete:true,
-                    date:"14th May 2022",
+                    date:"14th February 2025",
                     FeesOrPrize:"Prize",
                     regFees: 20,
                     title: "CIRCUITGENIX",
                     content:
-                      "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.",
-                    cash_price: 3500,
+                      "Circuit debugging is essential for identifying and fixing faults in electronic circuits. It involves testing components and connections to isolate issues, ensuring proper functionality. Debugging enhances problem-solving and design efficiency. Mastering this skill leads to more reliable and optimized circuit designs.",
+                    cash_price: 1000,
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
                     team:"Register as a team of two",
                     coordinators: [
                       {
-                        name: "John Doe",
-                        phone: "+91 9876543210"
+                        name: "Saj Krishna",
+                        phone: "+91 9061034100"
                       },
                       {
-                        name: "Jane Smith", 
-                        phone: "+91 9876543211"
+                        name: "Santo Varghese", 
+                        phone: "+91 9744241221"
                       }
                     ]
                   })}
@@ -394,22 +398,12 @@ const Tabs = ({ color }) => {
                   </div>
                   {registerButton({
                     img_src: EV,
-                    date:"14th May 2022",
+                    date:"14th and 15th February 2025",
                     class_new:"text-center",
                     complete:true,
                     title: "Expo",
-                    isMoney: true,
+                    isMoney: false,
                     cash_price: 3000,
-                    coordinators: [
-                      {
-                        name: "John Doe",
-                        phone: "+91 9876543210"
-                      },
-                      {
-                        name: "Jane Smith", 
-                        phone: "+91 9876543211"
-                      }
-                    ]
                   })}
                 </div>
               </div>
