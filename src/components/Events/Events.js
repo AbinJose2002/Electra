@@ -46,38 +46,9 @@ const registerButton = ({
   FeesOrPrize = "Fees",
   team,
   regFees,
+  coordinators,
 }) => {
   return (
-    // <div
-    //   // style={{height:"500px"}}
-    //   className="shadow-lg bg-black rounded-2xl bg-white w-48 md:w-1/3 mt-10 md:mr-5 md:ml-5 p-4 h-fit flex-col md:flex-row"
-    // >
-    //   <img
-    //     src={Drone}
-    //     alt="adidas"
-    //     className="m-auto"
-    //   />
-    //   <div className="bg-pink-200 m-3 p-4 rounded-lg">
-    //     <p className="text-white text-center text-xl font-bold ">{title}</p>
-    //     <p className="text-gray-50 text-xs hidden md:flex">{content}</p>
-    //     <div className="flex items-center flex-col flex-1">
-    //   {isMoney == true ? <p className="text-blue-500 mt-5 mb-5">₹{cash_price}/-</p> : <></>}
-    //   {isMoney == true ?
-    //   <button
-    //   type="button"
-    //   className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
-    // >
-    //   <a href={link}>
-    //     Register
-    //   </a>
-    // </button>
-    // :
-    // <></>
-    //   }
-
-    //     </div>
-    //   </div>
-    // </div>
     <div class={`p-4 sm:w-1/2 lg:w-1/3` + class_new}>
       <div class="h-full hover:bg-indigo-700 hover:text-white transition duration-300 ease-in border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
@@ -87,7 +58,7 @@ const registerButton = ({
         />
         <div class="p-6">
           <h1 class="text-2xl font-semibold mb-3">{title}</h1>
-          <p class="leading-relaxed mb-3">{content}</p>
+          <p class="leading-relaxed mb-3 text-justify">{content}</p>
           <div>
             <h6 className="text-xl text-center mb-5">DATE: {date} </h6>
           </div>
@@ -99,21 +70,18 @@ const registerButton = ({
               <></>
             )}
             {regFees != null ? <p className="text-lg mb-5">Registeration Fees: ₹ {regFees} /-</p> : <></>}
-            {complete == true ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link={link} isMoney={isMoney}/>}
-            {/* {isMoney == true ? (
-              <div className="w-full">
-                <a href={link}>
-                  <button
-                    type="button"
-                    className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
-                  >
-                    Register Now
-                  </button>
-                </a>
+            {coordinators && coordinators.length > 0 && (
+              <div className="w-full mb-5">
+                <h3 className="text-lg font-semibold mb-2">Coordinators:</h3>
+                {coordinators.map((coordinator, index) => (
+                  <div key={index} className="flex flex-col  mb-2">
+                    <p className="font-medium">{coordinator.name}</p>
+                    <p>{coordinator.phone}</p>
+                  </div>
+                ))}
               </div>
-            ) : (
-              <></>
-            )} */}
+            )}
+            {complete == false ? <h3 className="text-red-600">Registration is Closed, Thank you for your participation.</h3>:<Content link={link} isMoney={isMoney}/>}
           </div>
         </div>
       </div>
@@ -244,22 +212,62 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     complete:true,
                     img_src: Drone,
-                    date:"14th May 2022",
+                    date:"14th February 2025",
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
                     cash_price: 150,
                     link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
+                    coordinators: [
+                      {
+                        name: "Nitin Jose",
+                        phone: "+91 8078533091"
+                      },
+                      {
+                        name: "Devika A Nair", 
+                        phone: "+91 8289966507"
+                      }
+                    ]
+                  })}
+                  {registerButton({
+                    img_src: Drone,
+                    complete:true,
+                    date:"14th February 2025", 
+                    title: "ADDITIVE MANUFACTURING",
+                    content:
+                      "Explore additive manufacturing in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
+                    cash_price: 120,
+                    link: "https://www.yepdesk.com/additive-manufacturing",
+                    coordinators: [
+                      {
+                        name: "Nitin Jose",
+                        phone: "+91 8078533091"
+                      },
+                      {
+                        name: "Nandana Anil", 
+                        phone: "+91 9526088462"
+                      }
+                    ]
                   })}
                   {registerButton({
                     img_src: PLC,
                     complete:true,
-                    date:"14th May 2022",
+                    date:"14th February 2025",
                     title: "AZTECX",
                     content:
                       "This Workshop on programmable logic controllers (PLC) is an intra college event conducted by the Electra community under COSPHI. We hope to instil a basic understanding of PLC in young engineering students, which will aid them in pursuing their passions and building their future.",
                     cash_price: 100,
                     link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
+                    coordinators: [
+                      {
+                        name: "Nitin Jose",
+                        phone: "+91 8078533091"
+                      },
+                      {
+                        name: "Devika A Nair", 
+                        phone: "+91 8289966507"
+                      }
+                    ]
                   })}
                 </div>
               </div>
@@ -276,15 +284,25 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Quiz,
                     complete:true,
-                    date:"13th May 2022",
-                    regFees: 20,
+                    date:"14th and 15th February 2025",
+                    regFees: 100,
                     title: "CERVELLO",
                     content:
-                      "Quizzing is an art and a test for the intellect to improve or expand one's knowledge.CERVELLO is a quiz contest organised by ELECTRA in association with COSPHI. The quiz will be based on basic electrical and electronics,science, general knowledge and current affairs.",
+                      "Cervello is a thrilling quiz platform where engineering students test their logic and technical skills. It challenges creativity and problem-solving across diverse engineering topics. Students compete, learn, and push boundaries, turning knowledge into adventure. Ready to prove your mettle? Step into Cervello and let your engineering brilliance shine!",
                     cash_price: 3000,
                     FeesOrPrize:"Prize",
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
-                    team: "Register"
+                    
+                    coordinators: [
+                      {
+                        name: "Silpa Nair",
+                        phone: "+91 9072965359"
+                      },
+                      {
+                        name: "Vishnupriya S", 
+                        phone: "+91 7356666844"
+                      }
+                    ]
                   })}
                   {registerButton({
                     img_src: ScrapYard,
@@ -297,6 +315,16 @@ const Tabs = ({ color }) => {
                       "ELECTRA in association with COSPHI presents you Scrapyard, a competition which helps students to think on ways of reusing everyday materials. Participants will be provided a theme for which they have to model best creative and attractive products out of the waste materials.The competition's purpose is to raise environmental awareness and foster",
                     cash_price: 2500,
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
+                    coordinators: [
+                      {
+                        name: "John Doe",
+                        phone: "+91 9876543210"
+                      },
+                      {
+                        name: "Jane Smith", 
+                        phone: "+91 9876543211"
+                      }
+                    ]
                   })}
                   {registerButton({
                     img_src: CAD,
@@ -309,6 +337,16 @@ const Tabs = ({ color }) => {
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you SKETCH IT UP,  Cad  Competition, a platform for students to showcase their designs and their creative skills.",
                     cash_price: 2000,
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
+                    coordinators: [
+                      {
+                        name: "John Doe",
+                        phone: "+91 9876543210"
+                      },
+                      {
+                        name: "Jane Smith", 
+                        phone: "+91 9876543211"
+                      }
+                    ]
                   })}
                   {registerButton({
                     img_src: Debug,
@@ -321,7 +359,17 @@ const Tabs = ({ color }) => {
                       "To enhance the student's knowledge of basic circuits and showcase their brainstorming ideas in-circuit solving, COSPHI in association with ELECTRA presents CIRCUITGENIX- a circuit debugging competition to test the ability of participants to find errors in circuits and correct them so that the required function is achieved.",
                     cash_price: 3500,
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
-                    team:"Register as a team of two"
+                    team:"Register as a team of two",
+                    coordinators: [
+                      {
+                        name: "John Doe",
+                        phone: "+91 9876543210"
+                      },
+                      {
+                        name: "Jane Smith", 
+                        phone: "+91 9876543211"
+                      }
+                    ]
                   })}
                 </div>
               </div>
@@ -348,8 +396,20 @@ const Tabs = ({ color }) => {
                     img_src: EV,
                     date:"14th May 2022",
                     class_new:"text-center",
+                    complete:true,
                     title: "Expo",
-                    isMoney: false,
+                    isMoney: true,
+                    cash_price: 3000,
+                    coordinators: [
+                      {
+                        name: "John Doe",
+                        phone: "+91 9876543210"
+                      },
+                      {
+                        name: "Jane Smith", 
+                        phone: "+91 9876543211"
+                      }
+                    ]
                   })}
                 </div>
               </div>
@@ -365,13 +425,24 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize:"Prize",
                     img_src: Treasure,
-                    date:"14th May 2022",
-                    title: "Treasure Hunt",
+                    date:"14th February 2025",
+                    title: "BATTLE ON THE BOARDS",
                     content:
-                      "Discover the mysterious secrets hidden deep within the vast unknown",
-                    cash_price: 3000,
-                    link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
-                    isMoney:false
+                      "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
+                    cash_price: 15000,
+                    link: "https://www.yepdesk.com/battle-on-the-boards",
+                    isMoney:true,
+                    complete:true,
+                    coordinators: [
+                      {
+                        name: "Eldho Bibin Binu",
+                        phone: "+91 9539392817"
+                      },
+                      {
+                        name: "Ajeesh Antony", 
+                        phone: "+91 7356433524"
+                      }
+                    ]
                   })}
                 </div>
               </div>

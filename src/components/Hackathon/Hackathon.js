@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import Button from "../Buttons/Button";
 import { Collapse } from "react-collapse";
 import './Hackathon.css'
+import SplitText from "../SplitText/SplitText";
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 
-const ProblemStateMent = ({content}) => {
+const ProblemStateMent = ({ content }) => {
   return (
     <div className="p-4 md:w-1/3 sm:w-1/2 w-full"
     /* style={{minWidth:""}} */
@@ -29,26 +34,37 @@ function Hackathon() {
       <div className="bg-white w-3/4 bg-white pt-3 rounded-lg">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
           <h2 className="font-extrabold text-black">
-            <span className="text-4xl md:text-6xl block">Hackatron</span>
-            <span className="text-lg">Sponsored By</span>
-            <div className="flex justify-center">
+            <span className="text-4xl md:text-6xl block">
+            <SplitText
+              text="Hackatron"
+              className="text-8xl md:text-6xl font-semibold text-center"
+              delay={100}
+              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+              onLetterAnimationComplete={handleAnimationComplete}
+            /></span>
+            {/* <span className="text-lg">Sponsored By</span> */}
+            {/* <div className="flex justify-center">
               <a href="https://equipo.io/">
                 <img src={`${process.env.PUBLIC_URL}/equipo.png`} className="h-32 hover:scale-110 duration-200 transition" alt="" />
               </a>
-            </div>
+            </div> */} <br />
             <span className="block text-black text-xl">
-            24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 40K
+              24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 50K
             </span>
           </h2>
           <p className="text-xl mt-4 text-gray-400">
-            Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students. The hackathon will be conducted on 13th and 14th of June at Federal Institute of Science and Technology with a prize pool of 40k.
+            Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students. The hackathon will be conducted on 14th and 15th of February at Federal Institute of Science and Technology with a prize pool of 50k.
             The participants need to select a problem statement at the time of registration.
           </p>
-          
+
           <div class="mt-20 w-60 h-24 rounded-md mx-auto parent-div">
-              <div class="flex bg-blue-400 glow-on-hover rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
-                <h1 className="text-black text-3xl">Prize Pool of ₹40000/-</h1>
-              </div>
+            <div class="flex bg-blue-400 glow-on-hover rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
+              <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
+            </div>
           </div>
 
           <div
@@ -70,21 +86,21 @@ function Hackathon() {
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex justify-evenly flex-wrap -m-4 text-center">
                   {/* <h1 className="text-3xl">Coming Soon!!!!!</h1> */}
-                  {ProblemStateMent({content:"Support differently abled students in professional stem field - engineering"})}
-                  {ProblemStateMent({content:"Indoor mapping solutions at large institutions"})}
-                  {ProblemStateMent({content:"AI assistance in electrical power grid"})}
-                  {ProblemStateMent({content:"Smart solutions for assisting emergency services to navigate/reduce traffic congestion"})}
+                  {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
+                  {ProblemStateMent({ content: "Indoor mapping solutions at large institutions" })}
+                  {ProblemStateMent({ content: "AI assistance in electrical power grid" })}
+                  {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })}
                 </div>
               </div>
               <div className="lg:mt-0 lg:flex-shrink-0">
                 <div className="inline-flex rounded-md shadow">
                   <Button
-                    text={"Registration Closed, Thank You!!!"}
+                    text={"Registration Open !!!"}
                     isLink={true}
                     class_val={
                       "px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
                     }
-                    link={""}
+                    link={"https://www.yepdesk.com/hackatron"}
                   />
                 </div>
               </div>

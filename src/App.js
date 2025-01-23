@@ -8,6 +8,7 @@ import Hackathon from './components/Hackathon/Hackathon';
 import Events from './components/Events/Events'
 import Footer from './components/Footer/Footer'
 // Scroll
+// import ScrollText from './components/ScrollText/ScrollText';
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
       <NavBar />
       <LandingPage particlesInit={particlesInit} particlesLoaded={particlesLoaded}/>
       <Hackathon />
+      {/* <ScrollText /> */}
       <Events />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <About />
       <Footer />
     </div>
