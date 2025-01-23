@@ -3,6 +3,8 @@ import Button from "../Buttons/Button";
 import { Collapse } from "react-collapse";
 import './Hackathon.css'
 import SplitText from "../SplitText/SplitText";
+import hackatraonImage from '../../assets/WhatsApp Image 2025-01-22 at 10.00.11 PM.jpeg'
+import basketImage from '../../assets/basket.jpg'
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -22,91 +24,150 @@ const ProblemStateMent = ({ content }) => {
 };
 
 function Hackathon() {
-  const [isOpened, setIsOpened] = useState(false);
-  const [isLearnMoreVisible, setIsLearnMoreVisible] = useState(true);
-  const onButtonClick = () => {
-    console.log("Pressed");
-    setIsOpened((prev) => !prev);
-    setIsLearnMoreVisible((prev) => !prev);
+  const [isOpened1, setIsOpened1] = useState(false);
+  const [isOpened2, setIsOpened2] = useState(false);
+  const [isLearnMoreVisible1, setIsLearnMoreVisible1] = useState(true);
+  const [isLearnMoreVisible2, setIsLearnMoreVisible2] = useState(true);
+
+  const onButtonClick1 = () => {
+    setIsOpened1((prev) => !prev);
+    setIsLearnMoreVisible1((prev) => !prev);
   };
+
+  const onButtonClick2 = () => {
+    setIsOpened2((prev) => !prev);
+    setIsLearnMoreVisible2((prev) => !prev);
+  };
+
   return (
-    <div className="flex justify-center mb-20" id="Hackathon-Page">
-      <div className="bg-white w-3/4 bg-white pt-3 rounded-lg">
-        <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-          <h2 className="font-extrabold text-black">
-            <span className="text-4xl md:text-6xl block">
-            <SplitText
-              text="Hackatron"
-              className="text-8xl md:text-6xl font-semibold text-center"
-              delay={100}
-              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-              easing="easeOutCubic"
-              threshold={0.2}
-              rootMargin="-50px"
-              onLetterAnimationComplete={handleAnimationComplete}
-            /></span>
-            {/* <span className="text-lg">Sponsored By</span> */}
-            {/* <div className="flex justify-center">
-              <a href="https://equipo.io/">
-                <img src={`${process.env.PUBLIC_URL}/equipo.png`} className="h-32 hover:scale-110 duration-200 transition" alt="" />
-              </a>
-            </div> */} <br />
-            <span className="block text-black text-xl">
-              24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 50K
-            </span>
-          </h2>
-          <p className="text-xl mt-4 text-gray-400">
-            Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students. The hackathon will be conducted on 14th and 15th of February at Federal Institute of Science and Technology with a prize pool of 50k.
-            The participants need to select a problem statement at the time of registration.
-          </p>
-
-          <div class="mt-20 w-60 h-24 rounded-md mx-auto parent-div">
-            <div class="flex bg-blue-400 glow-on-hover rounded-full flex-row items-center h-full justify-center space-x-5" id="animate-bounce">
-              <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
-            </div>
-          </div>
-
-          <div
-            onClick={() => onButtonClick()}
-            className={isLearnMoreVisible ? "duration-200" : "hidden"}
-          >
-            <Button
-              text={"Learn More"}
-              link={""}
-              class_val={
-                "mt-10 mb-10 px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
-              }
+    <div className="flex justify-center mb-20">
+      <div className="bg-white w-3/4 pt-3 rounded-lg">
+        {/* First Event Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 p-8 border-b-2">
+          {/* Poster Side */}
+          <div className="w-full md:w-1/2">
+            <img 
+              src={hackatraonImage}
+              alt="Hackatron Poster" 
+              className="w-full rounded-lg shadow-lg"
             />
           </div>
 
-          {/* Start here */}
-          <Collapse isOpened={isOpened}>
-            <section className="text-gray-700 body-font duration-200">
-              <div className="container px-5 py-24 mx-auto">
-                <div className="flex justify-evenly flex-wrap -m-4 text-center">
-                  {/* <h1 className="text-3xl">Coming Soon!!!!!</h1> */}
-                  {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
-                  {ProblemStateMent({ content: "Indoor mapping solutions at large institutions" })}
-                  {ProblemStateMent({ content: "AI assistance in electrical power grid" })}
-                  {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })}
+          {/* Content Side */}
+          <div className="w-full md:w-1/2">
+            <h2 className="font-extrabold text-black">
+              <span className="text-4xl md:text-6xl block">
+                <SplitText
+                  text="Hackatron"
+                  className="text-8xl md:text-6xl font-semibold"
+                  delay={100}
+                  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                  easing="easeOutCubic"
+                  threshold={0.2}
+                  rootMargin="-50px"
+                  onLetterAnimationComplete={handleAnimationComplete}
+                />
+              </span>
+              <span className="block text-black text-xl mt-4">
+                24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 50K
+              </span>
+            </h2>
+            
+            <p className="text-xl mt-4 text-gray-400">
+              Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students.
+            </p>
+
+            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
+              <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
+            </div>
+
+            <div onClick={onButtonClick1} className={isLearnMoreVisible1 ? "mt-8" : "hidden"}>
+              <Button
+                text="Learn More"
+                class_val="px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
+              />
+            </div>
+
+            <Collapse isOpened={isOpened1}>
+              <section className="text-gray-700 body-font duration-200">
+                <div className="container px-5 py-24 mx-auto">
+                  <div className="flex justify-evenly flex-wrap -m-4 text-center">
+                    {/* <h1 className="text-3xl">Coming Soon!!!!!</h1> */}
+                    {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
+                    {ProblemStateMent({ content: "Indoor mapping solutions at large institutions" })}
+                    {ProblemStateMent({ content: "AI assistance in electrical power grid" })}
+                    {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })}
+                  </div>
                 </div>
-              </div>
-              <div className="lg:mt-0 lg:flex-shrink-0">
-                <div className="inline-flex rounded-md shadow">
-                  <Button
-                    text={"Registration Open !!!"}
-                    isLink={true}
-                    class_val={
-                      "px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
-                    }
-                    link={"https://www.yepdesk.com/hackatron"}
-                  />
+                <div className="lg:mt-0 lg:flex-shrink-0">
+                  <div className="inline-flex rounded-md shadow">
+                    <Button
+                      text={"Registration Open !!!"}
+                      isLink={true}
+                      class_val={
+                        "px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
+                      }
+                      link={"https://www.yepdesk.com/hackatron"}
+                    />
+                  </div>
                 </div>
-              </div>
-            </section>
-          </Collapse>
-          {/* End here */}
+              </section>
+            </Collapse>
+          </div>
+        </div>
+
+        {/* Second Event Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 p-8">
+          {/* Content Side */}
+          <div className="w-full md:w-1/2">
+            <h2 className="font-extrabold text-black">
+              <span className="text-4xl md:text-6xl block">
+                <SplitText
+                  text="BATTLE ON THE BOARDS"
+                  className="text-8xl md:text-6xl font-semibold"
+                  delay={100}
+                  animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                  animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                  easing="easeOutCubic"
+                  threshold={0.2}
+                  rootMargin="-50px"
+                  onLetterAnimationComplete={handleAnimationComplete}
+                />
+              </span>
+              <span className="block text-black text-xl mt-4">
+                BATTLE ON THE BOARDS is a 3x3 Basketball Tournament that provides a platform for students to showcase their athletic abilities.
+              </span>
+            </h2>
+            
+            <p className="text-xl mt-4 text-gray-400">
+              To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.
+            </p>
+
+            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
+              <h1 className="text-black text-3xl">Prize Pool of ₹15,000/-</h1>
+            </div>
+
+            <div onClick={onButtonClick2} className={isLearnMoreVisible2 ? "mt-8" : "hidden"}>
+              <Button
+                text="Learn More"
+                class_val="px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
+              />
+            </div>
+
+            <Collapse isOpened={isOpened2}>
+              {/* Add specific content for the second event */}
+            </Collapse>
+          </div>
+
+          {/* Poster Side */}
+          <div className="w-full md:w-1/2">
+            <img 
+              src={basketImage}
+              alt="Basketball Event Poster" 
+              className="w-full rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </div>
