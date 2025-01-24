@@ -7,7 +7,7 @@ import PLC from "../../assets/pathPixel.jpeg";
 import CAD from "../../assets/cad.jpg";
 import EV from "../../assets/ev_cars.jpeg";
 import Quiz from "../../assets/quiz.jpg";
-import Debug from "../../assets/debug.webp";
+import Debug from "../../assets/circuitgenix.jpeg";
 import ScrapYard from "../../assets/scrapyard.jpg";
 import Treasure from "../../assets/basket.jpeg";
 
