@@ -9,7 +9,7 @@ import EV from "../../assets/ev_cars.jpeg";
 import Quiz from "../../assets/quiz.jpg";
 import Debug from "../../assets/debug.webp";
 import ScrapYard from "../../assets/scrapyard.jpg";
-import Treasure from "../../assets/treasure.jpg";
+import Treasure from "../../assets/basket.jpeg";
 
 const Content = ({isMoney, link}) => {
   return (
