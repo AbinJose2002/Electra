@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaWrench, FaTrophy, FaTasks, FaTableTennis } from "react-icons/fa";
 import "./Events.css";
-import Drone from "../../assets/drone.jpg";
+import Drone from "../../assets/drones.jpeg";
 import Additive from "../../assets/additive.jpeg";
 import PLC from "../../assets/pathPixel.jpeg";
 import CAD from "../../assets/cad.jpg";
-import EV from "../../assets/ev.jpg";
+import EV from "../../assets/ev_cars.jpeg";
 import Quiz from "../../assets/quiz.jpg";
 import Debug from "../../assets/debug.webp";
 import ScrapYard from "../../assets/scrapyard.jpg";
@@ -257,7 +257,7 @@ const Tabs = ({ color }) => {
                     img_src: PLC,
                     complete:true,
                     date:"15th February 2025",
-                    title: "Path Pixels",
+                    title: "PATH PIXELS",
                     content:
                       "Join our AR & VR Workshop by ELECTRA and COSPHI for an immersive, hands-on experience with Augmented and Virtual Reality. Discover the fundamentals of AR/VR, explore their applications in industries like gaming, healthcare, and education, and learn to create simple AR/VR experiences using accessible tools. Ideal for tech enthusiasts and creative minds eager to explore the future of interactive technologies.",
                     cash_price: 130,

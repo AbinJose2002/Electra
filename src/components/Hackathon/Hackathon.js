@@ -3,8 +3,8 @@ import Button from "../Buttons/Button";
 import { Collapse } from "react-collapse";
 import './Hackathon.css'
 import SplitText from "../SplitText/SplitText";
-import hackatraonImage from '../../assets/WhatsApp Image 2025-01-22 at 10.00.11 PM.jpeg'
-import basketImage from '../../assets/basket.jpg'
+import hackatraonImage from '../../assets/WhatsApp Image 2025-01-23 at 10.00.59 PM.jpeg'
+import basketImage from '../../assets/basket.jpeg'
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -58,7 +58,7 @@ function Hackathon() {
             <h2 className="font-extrabold text-black">
               <span className="text-4xl md:text-6xl block">
                 <SplitText
-                  text="Hackatron"
+                  text="HACKATRON"
                   className="text-8xl md:text-6xl font-semibold"
                   delay={100}
                   animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
