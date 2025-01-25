@@ -221,7 +221,7 @@ const Tabs = ({ color }) => {
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
                     cash_price: 150,
-                    link: "https://www.yepdesk.com/open-register/6298f32c46e0fb0001742e8e/oerdce0c8q",
+                    link: "https://www.yepdesk.com/avian",
                     coordinators: [
                       {
                         name: "Nitin Jose",
