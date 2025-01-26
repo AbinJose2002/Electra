@@ -31,7 +31,7 @@ function About() {
             Electra is an association of electrical and electronics engineering student community at the Federal Institute of Science and Technology.  Electra was founded in 2004 and has been active ever since, manifesting perfection in each FISAT electrical student.
           </div>
         </div>
-        <div className="w-full text-center p-10">
+        <div className="w-full text-justify p-10">
           The Electrical and Electronics Association embodies sparks of creativity, the rays of originality, the colours of imagination, and the genuine expressions of the electrical students of FISAT. Electra aims at nurturing and developing the talents of young men and women from FISAT. It is not a purely technical association; it also promotes the academic, technological, managerial, cultural, and artistic skills of the electrical students of FISAT.
           <br />
           <br />

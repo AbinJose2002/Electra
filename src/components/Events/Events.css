@@ -13,3 +13,11 @@
     color: #ADD8E6;
     font-size: 2rem;
 }
+
+.reg-btn{
+    background-color: #4a4a4a !important;
+}
+
+.event-bg:hover{
+    background-color: #02D200;
+}

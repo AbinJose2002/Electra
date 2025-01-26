@@ -19,7 +19,7 @@ const Content = ({isMoney, link}) => {
         <a href={link}>
           <button
             type="button"
-            className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-pink-500 hover:bg-pink-700 mt-auto"
+            className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-green-500 hover:bg-pink-700 mt-auto reg-btn"
           >
             Register Now
           </button>
@@ -51,7 +51,7 @@ const registerButton = ({
 }) => {
   return (
     <div class={`p-2 sm:p-4 w-full sm:w-1/2 lg:w-1/3 ${class_new}`}>
-      <div class="h-full hover:bg-indigo-700 hover:text-white transition duration-300 ease-in border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+      <div class="h-full event-bg hover:text-white transition duration-300 ease-in border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
           class="h-48 sm:h-56 lg:h-72 w-full object-cover object-center"
           src={img_src}
@@ -66,7 +66,7 @@ const registerButton = ({
           {team != null ? <h3 className="text-base sm:text-lg mb-5 text-center font-bold">** Register as team of two</h3>:<></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
-              <p className="text-blue-500 text-2xl sm:text-3xl mb-5">{FeesOrPrize} : ₹ {cash_price} /-</p>
+              <p className="text-black-500 hover:text-grey text-2xl sm:text-3xl mb-5">{FeesOrPrize} : ₹ {cash_price} /-</p>
             ) : (
               <></>
             )}
@@ -220,16 +220,16 @@ const Tabs = ({ color }) => {
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
-                    cash_price: 150,
+                    cash_price: 149,
                     link: "https://www.yepdesk.com/avian",
                     coordinators: [
                       {
-                        name: "Nitin Jose",
-                        phone: "+91 8078533091"
+                        name: "Jithin Joseph",
+                        phone: "+91 98952 21439"
                       },
                       {
-                        name: "Devika A Nair", 
-                        phone: "+91 8289966507"
+                        name: "Nandana Anil", 
+                        phone: "+91 95260 88462"
                       }
                     ]
                   })}
@@ -237,10 +237,10 @@ const Tabs = ({ color }) => {
                     img_src: Additive,
                     complete:true,
                     date:"14th February 2025", 
-                    title: "ADDITIVE MANUFACTURING",
+                    title: "3D FORGE",
                     content:
-                      "Explore additive manufacturing in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
-                    cash_price: 120,
+                      "Explore 3D Forge in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
+                    cash_price: 129,
                     link: "https://www.yepdesk.com/additive-manufacturing",
                     coordinators: [
                       {
@@ -260,7 +260,7 @@ const Tabs = ({ color }) => {
                     title: "PATH PIXELS",
                     content:
                       "Join our AR & VR Workshop by ELECTRA and COSPHI for an immersive, hands-on experience with Augmented and Virtual Reality. Discover the fundamentals of AR/VR, explore their applications in industries like gaming, healthcare, and education, and learn to create simple AR/VR experiences using accessible tools. Ideal for tech enthusiasts and creative minds eager to explore the future of interactive technologies.",
-                    cash_price: 130,
+                    cash_price: 129,
                     link: "https://www.yepdesk.com/path-pixel",
                     coordinators: [
                       {
@@ -288,23 +288,23 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Quiz,
                     complete:true,
-                    date:"14th and 15th February 2025",
+                    date:"14th February 2025",
                     regFees: 100,
                     title: "CERVELLO",
                     content:
                       "Cervello is a thrilling quiz platform where engineering students test their logic and technical skills. It challenges creativity and problem-solving across diverse engineering topics. Students compete, learn, and push boundaries, turning knowledge into adventure. Ready to prove your mettle? Step into Cervello and let your engineering brilliance shine!",
-                    cash_price: 3000,
+                    cash_price: 1000,
                     FeesOrPrize:"Prize",
                     link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
                     
                     coordinators: [
                       {
-                        name: "Silpa Nair",
-                        phone: "+91 9072965359"
+                        name: "Pooja P. P",
+                        phone: "+91 62823 46836"
                       },
                       {
                         name: "Vishnupriya S", 
-                        phone: "+91 7356666844"
+                        phone: "+91 73566 66844"
                       }
                     ]
                   })}
@@ -367,11 +367,11 @@ const Tabs = ({ color }) => {
                     coordinators: [
                       {
                         name: "Saj Krishna",
-                        phone: "+91 9061034100"
+                        phone: "+91 90610 34100"
                       },
                       {
-                        name: "Santo Varghese", 
-                        phone: "+91 9744241221"
+                        name: "Abhinav M K", 
+                        phone: "+91 85905 10329"
                       }
                     ]
                   })}

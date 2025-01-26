@@ -46,9 +46,9 @@ function Hackathon() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 p-8 border-b-2">
           {/* Poster Side */}
           <div className="w-full md:w-1/2">
-            <img 
+            <img
               src={hackatraonImage}
-              alt="Hackatron Poster" 
+              alt="Hackatron Poster"
               className="w-full rounded-lg shadow-lg"
             />
           </div>
@@ -59,7 +59,7 @@ function Hackathon() {
               <span className="text-4xl md:text-6xl block">
                 <SplitText
                   text="HACKATRON"
-                  className="text-8xl md:text-6xl font-semibold"
+                  className="text-4xl sm:text-5xl md:text-6xl font-semibold"
                   delay={100}
                   animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                   animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -73,12 +73,16 @@ function Hackathon() {
                 24 HOUR HACKATHON COMPETITION WITH A PRIZE POOL OF 50K
               </span>
             </h2>
-            
+
             <p className="text-xl mt-4 text-gray-400">
               Hackatron is a 24 hour hackathon competition conducted as a part of COSPHI by ELECTRA, an association of Electrical and Electronics Engineering students.
             </p>
-          {/* sett the coordinator details */}
-            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
+            {/* sett the coordinator details */}
+            {/* <h3 className="text-base sm:text-lg font-semibold mb-2">Venue:</h3> */}<br />
+            <h3 className="text-base sm:text-lg font-semibold mb-2">Coordinators:</h3>
+            <p className="text-sm sm:text-base font-medium">Sreelekshmi V.S:  +91 82198 66854</p>
+            <p className="text-sm sm:text-base font-medium">Antony Paulachan:  +91 95673 50607</p>
+            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center prize-pool-pill">
               <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
             </div>
 
@@ -91,13 +95,13 @@ function Hackathon() {
 
             <Collapse isOpened={isOpened1}>
               <section className="text-gray-700 body-font duration-200">
-                <div className="container px-5 py-24 mx-auto">
-                  <div className="flex justify-evenly flex-wrap -m-4 text-center">
-                    {/* <h1 className="text-3xl">Coming Soon!!!!!</h1> */}
-                    {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
+                <div className="container py-24 ">
+                  <div className="flex justify-evenly flex-wrap -m-12 text-justify">
+                    <h1 className="text-3xl">Coming Soon!!!!!</h1>
+                    {/* {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
                     {ProblemStateMent({ content: "Indoor mapping solutions at large institutions" })}
                     {ProblemStateMent({ content: "AI assistance in electrical power grid" })}
-                    {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })}
+                    {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })} */}
                   </div>
                 </div>
                 <div className="lg:mt-0 lg:flex-shrink-0">
@@ -125,7 +129,7 @@ function Hackathon() {
               <span className="text-4xl md:text-6xl block">
                 <SplitText
                   text="BATTLE ON THE BOARDS"
-                  className="text-5xl md:text-5xl font-semibold whitespace-nowrap"
+                  className="text-3xl sm:text-4xl md:text-5xl font-semibold whitespace-nowrap"
                   delay={100}
                   animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                   animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -139,15 +143,17 @@ function Hackathon() {
                 BATTLE ON THE BOARDS is a 3x3 Basketball Tournament that provides a platform for students to showcase their athletic abilities.
               </span>
             </h2>
-            
+
             <p className="text-xl mt-4 text-gray-400">
               To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.
-            </p>
-
-            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center">
+            </p><br />
+            <h3 className="text-base sm:text-lg font-semibold mb-2">Coordinators:</h3>
+            <p className="text-sm sm:text-base font-medium">Eldho Bibin Binu:  +91 98470 28561</p>
+            <p className="text-sm sm:text-base font-medium">Ajeesh Antony:  +91 73564 33524</p>
+            <div className="mt-8 bg-blue-400 glow-on-hover rounded-full p-4 text-center prize-pool-pill">
               <h1 className="text-black text-3xl">Prize Pool of ₹15,000/-</h1>
             </div>
-{/* sett the coordinator details */}
+            {/* sett the coordinator details */}
             <div className="mt-8">
               <Button
                 text="Register Now"
@@ -160,9 +166,9 @@ function Hackathon() {
 
           {/* Poster Side */}
           <div className="w-full md:w-1/2">
-            <img 
+            <img
               src={basketImage}
-              alt="Basketball Event Poster" 
+              alt="Basketball Event Poster"
               className="w-full rounded-lg shadow-lg"
             />
           </div>

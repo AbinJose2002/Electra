@@ -1,3 +1,11 @@
 #animate-bounce {
     /* animation: bounce 1s infinite; */
 }
+
+.prize-pool-pill{
+    background-color: #02D200 !important;
+}
+
+.coordinator-details{
+    display: inline;
+}
