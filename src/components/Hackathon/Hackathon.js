@@ -105,7 +105,7 @@ function Hackathon() {
                   </div>
                 </div>
                 <div className="lg:mt-0 lg:flex-shrink-0">
-                  <div className="inline-flex rounded-md shadow">
+                  <div className="inline-flex rounded-md shadow flex justify-center w-full">
                     <Button
                       text={"Registration Open !!!"}
                       isLink={true}
@@ -129,7 +129,7 @@ function Hackathon() {
               <span className="text-4xl md:text-6xl block">
                 <SplitText
                   text="BATTLE ON THE BOARDS"
-                  className="text-3xl sm:text-4xl md:text-5xl font-semibold whitespace-nowrap"
+                  className="text-5xl sm:text-3xl md:text-5xl font-semibold break-words"
                   delay={100}
                   animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                   animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -137,6 +137,7 @@ function Hackathon() {
                   threshold={0.2}
                   rootMargin="-50px"
                   onLetterAnimationComplete={handleAnimationComplete}
+                  // style={{ fontSize: '4.20rem' }}
                 />
               </span>
               <span className="block text-black text-xl mt-4">
@@ -154,7 +155,7 @@ function Hackathon() {
               <h1 className="text-black text-3xl">Prize Pool of ₹15,000/-</h1>
             </div>
             {/* sett the coordinator details */}
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center">
               <Button
                 text="Register Now"
                 isLink={true}
