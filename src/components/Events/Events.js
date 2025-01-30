@@ -6,28 +6,33 @@ import Additive from "../../assets/additive.jpeg";
 import PLC from "../../assets/pathPixel.jpeg";
 import CAD from "../../assets/cad.jpg";
 import EV from "../../assets/ev_cars.jpeg";
-import Quiz from "../../assets/quiz.jpg";
+import Quiz from "../../assets/cervello.jpeg";
 import Debug from "../../assets/circuitgenix.jpeg";
+import threevsthree from '../../assets/threevsthree.jpeg'
 import ScrapYard from "../../assets/scrapyard.jpg";
 import Treasure from "../../assets/basket.jpeg";
+import efootball from '../../assets/efootball.jpeg'
+import tressurehunt from '../../assets/tressurehunt.jpeg'
+import capture from '../../assets/captutr.jpeg'
+import pillow from '../../assets/pillowfight.jpeg'
 
-const Content = ({isMoney, link}) => {
+const Content = ({ isMoney, link }) => {
   return (
     <div className="w-full">
-    {isMoney == true ? (
-      <div className="w-full">
-        <a href={link}>
-          <button
-            type="button"
-            className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-green-500 hover:bg-pink-700 mt-auto reg-btn"
-          >
-            Register Now
-          </button>
-        </a>
-      </div>
-    ) : (
-      <></>
-    )}
+      {isMoney == true ? (
+        <div className="w-full">
+          <a href={link}>
+            <button
+              type="button"
+              className="rounded w-full text-base h-12 font-medium duration-200 text-white bg-green-500 hover:bg-pink-700 mt-auto reg-btn"
+            >
+              Register Now
+            </button>
+          </a>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   )
 }
@@ -36,7 +41,7 @@ const Content = ({isMoney, link}) => {
 
 const registerButton = ({
   class_new = "",
-  complete=false,
+  complete = false,
   img_src,
   date,
   title,
@@ -63,7 +68,7 @@ const registerButton = ({
           <div>
             <h6 className="text-lg sm:text-xl text-center mb-5">DATE: {date}</h6>
           </div>
-          {team != null ? <h3 className="text-base sm:text-lg mb-5 text-center font-bold">** Register as team of two</h3>:<></>}
+          {team != null ? <h3 className="text-base sm:text-lg mb-5 text-center font-bold">** Register as team of two</h3> : <></>}
           <div class="flex items-center flex-wrap flex-col">
             {isMoney == true ? (
               <p className="text-black-500 hover:text-grey text-2xl sm:text-3xl mb-5">{FeesOrPrize} : ₹ {cash_price} /-</p>
@@ -82,9 +87,9 @@ const registerButton = ({
                 ))}
               </div>
             )}
-            {complete == false ? 
+            {complete == false ?
               <h3 className="text-red-600 text-sm sm:text-base">Registration is Closed, Thank you for your participation.</h3>
-              : <Content link={link} isMoney={isMoney}/>
+              : <Content link={link} isMoney={isMoney} />
             }
           </div>
         </div>
@@ -214,9 +219,9 @@ const Tabs = ({ color }) => {
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
-                    complete:true,
+                    complete: true,
                     img_src: Drone,
-                    date:"14th February 2025",
+                    date: "14th February 2025",
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
@@ -224,19 +229,19 @@ const Tabs = ({ color }) => {
                     link: "https://www.yepdesk.com/avian",
                     coordinators: [
                       {
-                        name: "Jithin Joseph",
-                        phone: "+91 98952 21439"
+                        name: "Nitin Jose",
+                        phone: "+91 8078533091"
                       },
                       {
-                        name: "Nandana Anil", 
-                        phone: "+91 95260 88462"
+                        name: "Devika",
+                        phone: "+91 82899 66507"
                       }
                     ]
                   })}
                   {registerButton({
                     img_src: Additive,
-                    complete:true,
-                    date:"14th February 2025", 
+                    complete: true,
+                    date: "14th February 2025",
                     title: "3D FORGE",
                     content:
                       "Explore 3D Forge in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
@@ -244,19 +249,19 @@ const Tabs = ({ color }) => {
                     link: "https://www.yepdesk.com/additive-manufacturing",
                     coordinators: [
                       {
-                        name: "Nitin Jose",
-                        phone: "+91 8078533091"
+                        name: "Jithin Joseph",
+                        phone: "+91 98952 21439"
                       },
                       {
-                        name: "Nandana Anil", 
+                        name: "Nandana Anil",
                         phone: "+91 9526088462"
                       }
                     ]
                   })}
                   {registerButton({
                     img_src: PLC,
-                    complete:true,
-                    date:"15th February 2025",
+                    complete: true,
+                    date: "15th February 2025",
                     title: "PATH PIXELS",
                     content:
                       "Join our AR & VR Workshop by ELECTRA and COSPHI for an immersive, hands-on experience with Augmented and Virtual Reality. Discover the fundamentals of AR/VR, explore their applications in industries like gaming, healthcare, and education, and learn to create simple AR/VR experiences using accessible tools. Ideal for tech enthusiasts and creative minds eager to explore the future of interactive technologies.",
@@ -268,7 +273,7 @@ const Tabs = ({ color }) => {
                         phone: "+91 8129384284"
                       },
                       {
-                        name: "V.Partip", 
+                        name: "V.Partip",
                         phone: "+91 8138084357"
                       }
                     ]
@@ -286,25 +291,118 @@ const Tabs = ({ color }) => {
                 </div>
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
+                    class_new: "",
+                    FeesOrPrize: "Prize",
+                    img_src: Treasure,
+                    date: "14th February 2025",
+                    title: "BATTLE ON THE BOARDS",
+                    content:
+                      "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
+                    cash_price: 15000,
+                    link: "https://www.yepdesk.com/battle-on-the-boards",
+                    isMoney: true,
+                    complete: true,
+                    coordinators: [
+                      {
+                        name: "Eldho Bibin Binu",
+                        phone: "+91 9539392817"
+                      },
+                      {
+                        name: "Ajeesh Antony",
+                        phone: "+91 7356433524"
+                      }
+                    ]
+                  })}
+                  {registerButton({
+                    img_src: threevsthree,
+                    complete: true,
+                    date: "15th February 2025",
+                    FeesOrPrize: "Prize",
+                    regFees: 500,
+                    title: "FINAL WHISTLE",
+                    content:
+                      "A 3×3 Football Tournament is a small-sided football competition featuring teams of three players each. It is designed for fast-paced, skillful play in a compact space, promoting quick passing, dribbling, and goal-scoring.",
+                    cash_price: 8000,
+                    link: "https://www.yepdesk.com/final-whistle",
+
+                    coordinators: [
+                      {
+                        name: "Anshath",
+                        phone: "+91 87144 42388"
+                      },
+                      {
+                        name: "Vishnupriya",
+                        phone: "+91 73566 66844"
+                      }
+                    ]
+                  })}
+                  {registerButton({
+                    img_src: capture,
+                    complete: true,
+                    date: "14th February 2025",
+                    FeesOrPrize: "Prize",
+                    regFees: 200,
+                    title: "LIGHTS CAMERA CLICK",
+                    content:
+                      "This competition is open to all, from amateur enthusiasts with smartphones to professional photographers with sophisticated equipment. Whether you’re just beginning your photography journey or are a seasoned pro, this competition offers a platform to showcase your creativity and passion. We encourage diverse perspectives, unique angles, and original interpretations",
+                    cash_price: 5000,
+                    link: "https://www.yepdesk.com/lights-camera-click",
+
+                    coordinators: [
+                      {
+                        name: "Adharsh",
+                        phone: "+91 99617 17920"
+                      },
+                      {
+                        name: "Devapriya",
+                        phone: "+91 98467 30098"
+                      }
+                    ]
+                  })}
+                  {registerButton({
+                    class_new: "",
+                    FeesOrPrize: "Prize",
+                    img_src: efootball,
+                    date: "14th February 2025",
+                    title: "E-FOOTBALL TOURNAMENT",
+                    content:
+                      "A PES (Pro Evolution Soccer) Tournament is a competitive gaming event where players compete against each other in eFootball (formerly PES), Konami's popular football simulation game.",
+                    cash_price: 2000,
+                    regFees: 50,
+                    link: "https://www.yepdesk.com/e-football-tournament1",
+                    isMoney: true,
+                    complete: true,
+                    coordinators: [
+                      {
+                        name: "Nihal",
+                        phone: "+91 95672 56446"
+                      },
+                      {
+                        name: "Amil",
+                        phone: "+91  91640 32056"
+                      }
+                    ]
+                  })}
+                  {registerButton({
                     img_src: Quiz,
-                    complete:true,
-                    date:"14th February 2025",
+                    complete: true,
+                    date: "14th February 2025",
                     regFees: 100,
                     title: "CERVELLO",
                     content:
                       "Cervello is a thrilling quiz platform where engineering students test their logic and technical skills. It challenges creativity and problem-solving across diverse engineering topics. Students compete, learn, and push boundaries, turning knowledge into adventure. Ready to prove your mettle? Step into Cervello and let your engineering brilliance shine!",
                     cash_price: 1000,
-                    FeesOrPrize:"Prize",
-                    link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
-                    
+                    FeesOrPrize: "Prize",
+                    link: "https://www.yepdesk.com/cervello",
+
                     coordinators: [
                       {
                         name: "Pooja P. P",
                         phone: "+91 62823 46836"
                       },
                       {
-                        name: "Vishnupriya S", 
-                        phone: "+91 73566 66844"
+                        name: "Saj Krishna",
+                        phone: "+91 90610 34100"
                       }
                     ]
                   })}
@@ -354,27 +452,28 @@ const Tabs = ({ color }) => {
                   })} */}
                   {registerButton({
                     img_src: Debug,
-                    complete:true,
-                    date:"14th February 2025",
-                    FeesOrPrize:"Prize",
-                    regFees: 20,
+                    complete: true,
+                    date: "15th February 2025",
+                    FeesOrPrize: "Prize",
+                    regFees: 100,
                     title: "CIRCUITGENIX",
                     content:
                       "Circuit debugging is essential for identifying and fixing faults in electronic circuits. It involves testing components and connections to isolate issues, ensuring proper functionality. Debugging enhances problem-solving and design efficiency. Mastering this skill leads to more reliable and optimized circuit designs.",
                     cash_price: 1000,
-                    link: "https://www.yepdesk.com/open-register/6298d8fb46e0fb0001736ab5/l4k5i3oera",
-                    team:"Register as a team of two",
+                    link: "https://www.yepdesk.com/circuitgenix",
+                    team: "Register as a team of two",
                     coordinators: [
                       {
-                        name: "Saj Krishna",
-                        phone: "+91 90610 34100"
+                        name: "Sayooj",
+                        phone: "+91 89432 90093"
                       },
                       {
-                        name: "Abhinav M K", 
+                        name: "Abhinav M K",
                         phone: "+91 85905 10329"
                       }
                     ]
                   })}
+                  
                 </div>
               </div>
               <div className={openTab === 3 ? "block" : "hidden"} id="link3">
@@ -398,9 +497,9 @@ const Tabs = ({ color }) => {
                   </div>
                   {registerButton({
                     img_src: EV,
-                    date:"14th and 15th February 2025",
-                    class_new:"text-center",
-                    complete:true,
+                    date: "14th and 15th February 2025",
+                    class_new: "text-center",
+                    complete: true,
                     title: "Expo",
                     isMoney: false,
                     cash_price: 3000,
@@ -417,24 +516,47 @@ const Tabs = ({ color }) => {
                 <div className="flex justify-evenly flex-wrap flex-col md:flex-row">
                   {registerButton({
                     class_new: "",
-                    FeesOrPrize:"Prize",
-                    img_src: Treasure,
-                    date:"14th February 2025",
-                    title: "BATTLE ON THE BOARDS",
+                    FeesOrPrize: "Prize",
+                    img_src: tressurehunt,
+                    date: "15th February 2025",
+                    title: "TREASURE HUNT",
                     content:
-                      "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
-                    cash_price: 15000,
-                    link: "https://www.yepdesk.com/battle-on-the-boards",
-                    isMoney:true,
-                    complete:true,
+                      "A Treasure Hunt is an adventurous game where participants follow a series of clues to find hidden objects or a final prize. It can be played indoors or outdoors and is popular at events, schools, corporate team-building, and parties.",
+                    cash_price: 1000,
+                    regFees: 50,
+                    link: "https://www.yepdesk.com/treasure-hunt11",
+                    isMoney: true,
+                    complete: true,
                     coordinators: [
                       {
-                        name: "Eldho Bibin Binu",
-                        phone: "+91 9539392817"
+                        name: "Aagna",
+                        phone: "+91 94471 66260"
                       },
                       {
-                        name: "Ajeesh Antony", 
-                        phone: "+91 7356433524"
+                        name: "Navaneeth",
+                        phone: "+91 80754 37404"
+                      }
+                    ]
+                  })}
+                  {registerButton({
+                    class_new: "",
+                    img_src: pillow,
+                    date: "14th and 15th February 2025",
+                    title: "PILLOW FIGHT",
+                    content:
+                      "A pillow fight is a fun and lighthearted activity where participants use soft pillows to playfully hit each other. It is often enjoyed by children, friends, or even in organized competitions.",
+                    regFees: 20,
+                    link: "https://www.yepdesk.com/battle-on-the-boards",
+                    isMoney: false,
+                    complete: true,
+                    coordinators: [
+                      {
+                        name: "Vishnu",
+                        phone: "+91  62387 13899"
+                      },
+                      {
+                        name: "Abhijith",
+                        phone: "+91 92079 00184"
                       }
                     ]
                   })}

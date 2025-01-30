@@ -7,9 +7,7 @@ import Sponsors from './components/Sponsors/Sponsors';
 import Hackathon from './components/Hackathon/Hackathon';
 import Events from './components/Events/Events'
 import Footer from './components/Footer/Footer'
-// Scroll
-// import ScrollText from './components/ScrollText/ScrollText';
-
+import PortraitVideo from './components/PortraitVideo/PortraitVideo';
 
 function App() {
   const particlesInit = async(main) => await loadFull(main)
@@ -21,6 +19,7 @@ function App() {
       <LandingPage particlesInit={particlesInit} particlesLoaded={particlesLoaded}/>
       <Hackathon />
       {/* <ScrollText /> */}
+      {/* <PortraitVideo videoSrc="intro_video.mp4" /> */}
       <Events />
       {/* <Sponsors /> */}
       <About />
