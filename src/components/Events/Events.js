@@ -241,7 +241,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Additive,
                     complete: true,
-                    date: "14th February 2025",
+                    date: "15th February 2025",
                     title: "3D FORGE",
                     content:
                       "Explore 3D Forge in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
