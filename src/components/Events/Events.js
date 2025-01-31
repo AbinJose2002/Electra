@@ -246,7 +246,7 @@ const Tabs = ({ color }) => {
                     content:
                       "Explore 3D Forge in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
                     cash_price: 129,
-                    link: "https://www.yepdesk.com/additive-manufacturing",
+                    link: "https://www.yepdesk.com/3d-forge",
                     coordinators: [
                       {
                         name: "Jithin Joseph",
@@ -578,7 +578,7 @@ function Events() {
           <h1 className="font-medium text-black text-5xl">Events</h1>
         </div>
         <div className="m-10">
-          <Tabs color="red" />;
+          <Tabs color="red" />
         </div>
       </div>
     </div>

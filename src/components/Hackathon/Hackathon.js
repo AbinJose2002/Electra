@@ -86,38 +86,16 @@ function Hackathon() {
               <h1 className="text-black text-3xl">Prize Pool of ₹50,000/-</h1>
             </div>
 
-            <div onClick={onButtonClick1} className={isLearnMoreVisible1 ? "mt-8" : "hidden"}>
-              <Button
-                text="Learn More"
-                class_val="px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
-              />
-            </div>
 
-            <Collapse isOpened={isOpened1}>
-              <section className="text-gray-700 body-font duration-200">
-                <div className="container py-24 ">
-                  <div className="flex justify-evenly flex-wrap -m-12 text-justify">
-                    <h1 className="text-3xl">Coming Soon!!!!!</h1>
-                    {/* {ProblemStateMent({ content: "Support differently abled students in professional stem field - engineering" })}
-                    {ProblemStateMent({ content: "Indoor mapping solutions at large institutions" })}
-                    {ProblemStateMent({ content: "AI assistance in electrical power grid" })}
-                    {ProblemStateMent({ content: "Smart solutions for assisting emergency services to navigate/reduce traffic congestion" })} */}
-                  </div>
-                </div>
-                <div className="lg:mt-0 lg:flex-shrink-0">
-                  <div className="inline-flex rounded-md shadow flex justify-center w-full">
+            
                     <Button
                       text={"Registration Open !!!"}
                       isLink={true}
                       class_val={
-                        "px-6 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
+                        "px-6 mt-4 py-2 transition border-2 ease-in duration-200 uppercase text-black rounded-full hover:bg-black hover:text-white border-2 border-gray-900 focus:outline-none"
                       }
                       link={"https://www.yepdesk.com/hackatron"}
                     />
-                  </div>
-                </div>
-              </section>
-            </Collapse>
           </div>
         </div>
 
