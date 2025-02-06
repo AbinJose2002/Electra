@@ -322,7 +322,7 @@ const Tabs = ({ color }) => {
                     title: "FINAL WHISTLE",
                     content:
                       "A 7×7 Football Tournament is a small-sided football competition featuring teams of three players each. It is designed for fast-paced, skillful play in a compact space, promoting quick passing, dribbling, and goal-scoring.",
-                    cash_price: 8000,
+                    cash_price: 15000,
                     link: "https://www.yepdesk.com/final-whistle",
 
                     coordinators: [
