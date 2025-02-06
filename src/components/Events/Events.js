@@ -316,7 +316,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: threevsthree,
                     complete: true,
-                    date: "15th February 2025",
+                    date: "12th and 13th February 2025",
                     FeesOrPrize: "Prize",
                     regFees: 1500,
                     title: "FINAL WHISTLE",
