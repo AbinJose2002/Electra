@@ -318,10 +318,10 @@ const Tabs = ({ color }) => {
                     complete: true,
                     date: "15th February 2025",
                     FeesOrPrize: "Prize",
-                    regFees: 500,
+                    regFees: 1500,
                     title: "FINAL WHISTLE",
                     content:
-                      "A 3×3 Football Tournament is a small-sided football competition featuring teams of three players each. It is designed for fast-paced, skillful play in a compact space, promoting quick passing, dribbling, and goal-scoring.",
+                      "A 7×7 Football Tournament is a small-sided football competition featuring teams of three players each. It is designed for fast-paced, skillful play in a compact space, promoting quick passing, dribbling, and goal-scoring.",
                     cash_price: 8000,
                     link: "https://www.yepdesk.com/final-whistle",
 
