@@ -221,7 +221,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     complete: true,
                     img_src: Drone,
-                    date: "14th February 2025",
+                    date: "14th March 2025",
                     title: "AVIAN",
                     content:
                       "This workshop will take you to the fundamentals of a drone. Participants will get a clear idea on how to build a drone, its theory and the physics behind it. The workshop will be handled by one of the most famous Drone enthusiasts Mr. Abraham George, founder of Drone Racers Kerala. Flying of drones will be exhibited after the workshop by Drone Racers Kerala .",
@@ -241,7 +241,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Additive,
                     complete: true,
-                    date: "15th February 2025",
+                    date: "15th March 2025",
                     title: "3D FORGE",
                     content:
                       "Explore 3D Forge in our 1-Day 3D Printing Workshop, hosted by ELECTRA and COSPHI. This beginner-friendly session introduces the basics of 3D printing, from design to printing, and guides you through creating physical objects from digital models. Perfect for those new to 3D printing, this hands-on workshop provides a clear introduction to its potential and helps you begin exploring this innovative technology. Take your first step toward creating the future!",
@@ -261,7 +261,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: PLC,
                     complete: true,
-                    date: "15th February 2025",
+                    date: "15th March 2025",
                     title: "PATH PIXELS",
                     content:
                       "Join our AR & VR Workshop by ELECTRA and COSPHI for an immersive, hands-on experience with Augmented and Virtual Reality. Discover the fundamentals of AR/VR, explore their applications in industries like gaming, healthcare, and education, and learn to create simple AR/VR experiences using accessible tools. Ideal for tech enthusiasts and creative minds eager to explore the future of interactive technologies.",
@@ -294,7 +294,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: Treasure,
-                    date: "14th February 2025",
+                    date: "14th March 2025",
                     title: "BATTLE ON THE BOARDS",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
@@ -313,33 +313,11 @@ const Tabs = ({ color }) => {
                       }
                     ]
                   })}
-                  {registerButton({
-                    img_src: threevsthree,
-                    complete: true,
-                    date: "12th and 13th February 2025",
-                    FeesOrPrize: "Prize",
-                    regFees: 1500,
-                    title: "FINAL WHISTLE",
-                    content:
-                      "A 7×7 Football Tournament is a small-sided football competition featuring teams of three players each. It is designed for fast-paced, skillful play in a compact space, promoting quick passing, dribbling, and goal-scoring.",
-                    cash_price: 15000,
-                    link: "https://www.yepdesk.com/final-whistle",
-
-                    coordinators: [
-                      {
-                        name: "Anshath",
-                        phone: "+91 87144 42388"
-                      },
-                      {
-                        name: "Vishnupriya",
-                        phone: "+91 73566 66844"
-                      }
-                    ]
-                  })}
+                  
                   {registerButton({
                     img_src: capture,
                     complete: true,
-                    date: "14th February 2025",
+                    date: "14th March 2025",
                     FeesOrPrize: "Prize",
                     regFees: 200,
                     title: "LIGHTS CAMERA CLICK",
@@ -363,7 +341,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: efootball,
-                    date: "14th February 2025",
+                    date: "14th March 2025",
                     title: "E-FOOTBALL TOURNAMENT",
                     content:
                       "A PES (Pro Evolution Soccer) Tournament is a competitive gaming event where players compete against each other in eFootball (formerly PES), Konami's popular football simulation game.",
@@ -386,7 +364,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Quiz,
                     complete: true,
-                    date: "14th February 2025",
+                    date: "14th March 2025",
                     regFees: 100,
                     title: "CERVELLO",
                     content:
@@ -453,7 +431,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     img_src: Debug,
                     complete: true,
-                    date: "15th February 2025",
+                    date: "15th March 2025",
                     FeesOrPrize: "Prize",
                     regFees: 100,
                     title: "CIRCUITGENIX",
@@ -497,7 +475,7 @@ const Tabs = ({ color }) => {
                   </div>
                   {registerButton({
                     img_src: EV,
-                    date: "14th and 15th February 2025",
+                    date: "14th and 15th March 2025",
                     class_new: "text-center",
                     complete: true,
                     title: "Expo",
@@ -518,7 +496,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: tressurehunt,
-                    date: "15th February 2025",
+                    date: "15th March 2025",
                     title: "TREASURE HUNT",
                     content:
                       "A Treasure Hunt is an adventurous game where participants follow a series of clues to find hidden objects or a final prize. It can be played indoors or outdoors and is popular at events, schools, corporate team-building, and parties.",
@@ -541,7 +519,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     class_new: "",
                     img_src: pillow,
-                    date: "14th and 15th February 2025",
+                    date: "14th and 15th March 2025",
                     title: "PILLOW FIGHT",
                     content:
                       "A pillow fight is a fun and lighthearted activity where participants use soft pillows to playfully hit each other. It is often enjoyed by children, friends, or even in organized competitions.",
