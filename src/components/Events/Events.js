@@ -294,7 +294,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: Treasure,
-                    date: "14th March 2025",
+                    date: "10th March 2025",
                     title: "BATTLE ON THE BOARDS",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
@@ -519,7 +519,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     class_new: "",
                     img_src: pillow,
-                    date: "10th March 2025",
+                    date: "14th and 15th March 2025",
                     title: "PILLOW FIGHT",
                     content:
                       "A pillow fight is a fun and lighthearted activity where participants use soft pillows to playfully hit each other. It is often enjoyed by children, friends, or even in organized competitions.",
