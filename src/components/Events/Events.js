@@ -519,7 +519,7 @@ const Tabs = ({ color }) => {
                   {registerButton({
                     class_new: "",
                     img_src: pillow,
-                    date: "14th and 15th March 2025",
+                    date: "10th March 2025",
                     title: "PILLOW FIGHT",
                     content:
                       "A pillow fight is a fun and lighthearted activity where participants use soft pillows to playfully hit each other. It is often enjoyed by children, friends, or even in organized competitions.",
