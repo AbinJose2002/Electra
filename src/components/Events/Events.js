@@ -371,7 +371,7 @@ const Tabs = ({ color }) => {
                       "Cervello is a thrilling quiz platform where engineering students test their logic and technical skills. It challenges creativity and problem-solving across diverse engineering topics. Students compete, learn, and push boundaries, turning knowledge into adventure. Ready to prove your mettle? Step into Cervello and let your engineering brilliance shine!",
                     cash_price: 1000,
                     FeesOrPrize: "Prize",
-                    link: "https://www.yepdesk.com/cervello",
+                    link: "https://docs.google.com/forms/d/e/1FAIpQLSeuIhH54hOPWAnXh816vyS5e1qwnS1KPyugQG_LzX9d-WzIaw/viewform?usp=header",
 
                     coordinators: [
                       {
