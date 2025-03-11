@@ -341,7 +341,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: efootball,
-                    date: "1th March 2025",
+                    date: "15th March 2025",
                     title: "E-FOOTBALL TOURNAMENT",
                     content:
                       "A PES (Pro Evolution Soccer) Tournament is a competitive gaming event where players compete against each other in eFootball (formerly PES), Konami's popular football simulation game.",
