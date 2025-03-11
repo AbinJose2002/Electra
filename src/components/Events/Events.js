@@ -294,7 +294,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: Treasure,
-                    date: "10th March 2025",
+                    date: "15th March 2025",
                     title: "BATTLE ON THE BOARDS",
                     content:
                       "To challenge your skills, ELECTRA in association with COSPHI brings before you BATTLE ON THE BOARDS, 3x3 Basketball Tournament, a platform for students to showcase their talent in sports.",
@@ -341,7 +341,7 @@ const Tabs = ({ color }) => {
                     class_new: "",
                     FeesOrPrize: "Prize",
                     img_src: efootball,
-                    date: "14th March 2025",
+                    date: "1th March 2025",
                     title: "E-FOOTBALL TOURNAMENT",
                     content:
                       "A PES (Pro Evolution Soccer) Tournament is a competitive gaming event where players compete against each other in eFootball (formerly PES), Konami's popular football simulation game.",
