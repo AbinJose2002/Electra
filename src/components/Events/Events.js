@@ -319,7 +319,7 @@ const Tabs = ({ color }) => {
                     complete: true,
                     date: "14th March 2025",
                     FeesOrPrize: "Prize",
-                    regFees: 200,
+                    regFees: 100,
                     title: "LIGHTS CAMERA CLICK",
                     content:
                       "This competition is open to all, from amateur enthusiasts with smartphones to professional photographers with sophisticated equipment. Whether you’re just beginning your photography journey or are a seasoned pro, this competition offers a platform to showcase your creativity and passion. We encourage diverse perspectives, unique angles, and original interpretations",
